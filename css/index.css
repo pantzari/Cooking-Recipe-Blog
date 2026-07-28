@@ -1,0 +1,383 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+*::after,
+* ::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #f0ebe1;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h5 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("fonts/MyriadPro-Regular.woff2") format("woff2"), url("fonts/MyriadPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "American Typewriter";
+  src: url("/front/css/fonts/AmericanTypewriterStd-BdCnd.woff2") format("woff2"), url("/front/css/fonts/AmericanTypewriterStd-BdCnd.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: clip;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 1920px;
+  padding-inline: clamp(16px, 10vw, 64px);
+  margin-inline: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-inline: 15px 24px;
+  background-color: #f0ebe1;
+  border: 3px solid #bbb6ab;
+  border-radius: 9999px;
+  font-family: "Roboto", sans-serif;
+  max-width: 1312px;
+  margin: 1.5rem auto;
+}
+header .logo-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  padding: 24px;
+}
+header .logo-wrap img {
+  width: 40px;
+  height: 36px;
+  display: block;
+}
+header .logo-wrap .brand {
+  color: #232321;
+  font-weight: 800;
+  font-size: 0.95rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+header .nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header .nav a {
+  position: relative;
+  text-decoration: none;
+  color: #8c8983;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding-bottom: 0.35rem;
+  -webkit-transition: color 0.2s ease;
+  -o-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+header .nav a:hover {
+  color: #232321;
+}
+header .nav a.active {
+  color: #232321;
+}
+header .nav a.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #ee6352;
+  border-radius: 2px;
+}
+header .actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.75rem;
+}
+header .actions .search-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border: none;
+  color: #232321;
+  cursor: pointer;
+  -webkit-transition: background-color 0.2s ease;
+  -o-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+header .actions .search-btn:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+header .actions .subscribe-btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.7rem 1.5rem;
+  background-color: #232321;
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  border-radius: 9999px;
+  -webkit-transition: opacity 0.2s ease;
+  -o-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+}
+header .actions .subscribe-btn:hover {
+  opacity: 0.9;
+}
+
+#hero .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#hero .wrapper .hero-banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+#hero .wrapper .hero-banner picture {
+  display: block;
+  width: 100%;
+}
+#hero .wrapper .hero-banner picture img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+#hero .wrapper .hero-banner .hero-content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+#hero .wrapper .hero-banner .hero-content h1,
+#hero .wrapper .hero-banner .hero-content p {
+  color: #f0ebe1;
+}
+#hero .wrapper .hero-banner .hero-content h1 {
+  text-transform: uppercase;
+  line-height: 0.9;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: clamp(38px, 10vw, 80px);
+}
+#hero .wrapper .hero-banner .hero-content p {
+  max-width: 427px;
+  width: 100%;
+  font-size: clamp(18px, 2.5vw, 21px);
+  font-family: "Roboto", sans-serif;
+  margin-inline: auto;
+  padding-top: 15px;
+  padding-bottom: 40px;
+  letter-spacing: 1px;
+}
+#hero .wrapper .hero-banner .hero-content button {
+  all: unset;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  cursor: pointer;
+  padding: 12px 24px;
+  text-transform: uppercase;
+  background-color: #f29c33;
+  border-radius: 24px;
+  font-weight: bold;
+  font-size: 14px;
+  -webkit-transition: background-color 0.2s ease, -webkit-transform 0.2s ease;
+  transition: background-color 0.2s ease, -webkit-transform 0.2s ease;
+  -o-transition: background-color 0.2s ease, transform 0.2s ease;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  transition: background-color 0.2s ease, transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+#hero .wrapper .hero-banner .hero-content button::before {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  z-index: -1;
+  background: -o-linear-gradient(45deg, #f29c33, #ff6b00, #f29c33);
+  background: linear-gradient(45deg, #f29c33, #ff6b00, #f29c33);
+  border-radius: inherit;
+  -webkit-filter: blur(12px);
+          filter: blur(12px);
+  opacity: 0.6;
+  -webkit-animation: button-pulse 1.5s ease-in-out infinite alternate;
+          animation: button-pulse 1.5s ease-in-out infinite alternate;
+}
+#hero .wrapper .hero-banner .hero-content button:hover {
+  background-color: #e38527;
+  -webkit-transform: scale(1.02);
+      -ms-transform: scale(1.02);
+          transform: scale(1.02);
+}
+#hero .wrapper .hero-banner .hero-content button:hover::before {
+  opacity: 0.95;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+}
+@-webkit-keyframes button-pulse {
+  0% {
+    opacity: 0.35;
+    -webkit-filter: blur(8px);
+            filter: blur(8px);
+  }
+  100% {
+    opacity: 0.85;
+    -webkit-filter: blur(16px);
+            filter: blur(16px);
+  }
+}
+@keyframes button-pulse {
+  0% {
+    opacity: 0.35;
+    -webkit-filter: blur(8px);
+            filter: blur(8px);
+  }
+  100% {
+    opacity: 0.85;
+    -webkit-filter: blur(16px);
+            filter: blur(16px);
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

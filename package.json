@@ -1,0 +1,32 @@
+{
+  "name": "html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "css-what": "^5.0.1",
+    "npm": "^7.24.1",
+    "onchange": "^7.1.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "*",
+    "cssnano": "*",
+    "npm-run-all": "*",
+    "postcss": "*",
+    "postcss-cli": "*",
+    "postcss-scss": "*",
+    "sass": "*"
+  },
+  "scripts": {
+    "build-task:mycompile": "sass src/sass:css -s expanded",
+    "build-task:prefix": "postcss css/**/*.css --base --use=autoprefixer --map=false --dir css",
+    "build-task:min": "postcss css/**/*[!min].css --base --use=cssnano --map=false --dir css --ext .min.css",
+    "dev": "onchange \"src/sass\" -- run-s build-task:*"
+  },
+  "browserslist": [
+    "last 4 versions"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

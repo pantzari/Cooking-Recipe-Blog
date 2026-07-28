@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My page title</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/index.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo-wrap">
+        <img src="./img/svgs/logo.svg" alt="Cooks Delight logo" />
+        <span class="brand">Cooks<br />Delight</span>
+      </div>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Recipes</a></li>
+          <li><a href="#">Cooking Tips</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="actions">
+        <button class="search-btn" aria-label="Search">
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+        <a href="#subscribe" class="subscribe-btn">Subscribe</a>
+      </div>
+    </header>
+    <section id="hero">
+      <div class="wrapper">
+        <div class="hero-banner">
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="./img/hero-img.png"
+              width="1312"
+              height="577"
+            />
+            <img
+              src="./img/hero-img-mob.png"
+              alt="Cooks Delight header banner"
+            />
+          </picture>
+          <div class="hero-content">
+            <h1>Unleash Culinary Excellence</h1>
+            <p>
+              Explore a world of flavors, discover handcrafted recipes, and let
+              the aroma of our passion for cooking fill your kitchen
+            </p>
+            <button>explore recipes</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

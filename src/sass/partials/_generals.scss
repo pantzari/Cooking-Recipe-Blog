@@ -1,0 +1,19 @@
+@use "./variables" as v;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: clip;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 1920px;
+  padding-inline: clamp(16px, 10vw, 64px);
+  margin-inline: auto;
+  box-sizing: border-box;
+  width: 100%;
+}

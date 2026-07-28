@@ -1,0 +1,112 @@
+@use "../../partials/variables" as v;
+
+#hero {
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .hero-banner {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+
+      picture {
+        display: block;
+        width: 100%;
+
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+          display: block;
+        }
+      }
+
+      .hero-content {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 2;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        h1,
+        p {
+          color: v.$bg-color;
+        }
+
+        h1 {
+          text-transform: uppercase;
+          line-height: 0.9;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 800;
+          font-size: clamp(38px, 10vw, 80px);
+        }
+
+        p {
+          max-width: 427px;
+          width: 100%;
+          font-size: clamp(18px, 2.5vw, 21px);
+          font-family: "Roboto", sans-serif;
+          margin-inline: auto;
+          padding-top: 15px;
+          padding-bottom: 40px;
+          letter-spacing: 1px;
+        }
+
+        button {
+          all: unset;
+          position: relative;
+          z-index: 1;
+          display: inline-block;
+          cursor: pointer;
+          padding: 12px 24px;
+          text-transform: uppercase;
+          background-color: #f29c33;
+          border-radius: 24px;
+          font-weight: bold;
+          font-size: 14px;
+          transition:
+            background-color 0.2s ease,
+            transform 0.2s ease;
+
+          // glowing light  behind
+          &::before {
+            content: "";
+            position: absolute;
+            inset: -4px;
+            z-index: -1;
+            background: linear-gradient(45deg, #f29c33, #ff6b00, #f29c33);
+            border-radius: inherit;
+            filter: blur(12px);
+            opacity: 0.6;
+            animation: button-pulse 1.5s ease-in-out infinite alternate;
+          }
+
+          &:hover {
+            background-color: #e38527;
+            transform: scale(1.02);
+
+            &::before {
+              opacity: 0.95;
+              animation-duration: 1.2s;
+            }
+          }
+
+          @keyframes button-pulse {
+            0% {
+              opacity: 0.35;
+              filter: blur(8px);
+            }
+            100% {
+              opacity: 0.85;
+              filter: blur(16px);
+            }
+          }
+        }
+      }
+    }
+  }
+}

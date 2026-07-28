@@ -1,0 +1,105 @@
+// Colors
+
+$bg-color: #f0ebe1;
+$border-color: #bbb6ab;
+$text-dark: #232321;
+$text-muted: #8c8983;
+$red: #ee6352;
+
+// font-face
+@font-face {
+  font-family: "Myriad Pro";
+  src:
+    url("fonts/MyriadPro-Regular.woff2") format("woff2"),
+    url("fonts/MyriadPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "American Typewriter";
+  src:
+    url("/front/css/fonts/AmericanTypewriterStd-BdCnd.woff2") format("woff2"),
+    url("/front/css/fonts/AmericanTypewriterStd-BdCnd.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+// fonts
+$fInter: "Inter", sans-serif;
+$primary-font: "Consolas", "Lucida Console", monospace;
+
+// Font sizes
+
+$font-20: 20px;
+$font-40: 40px;
+$font-40-mobile: min(40px, calc(18 / 375 * 100vw));
+// free icons
+@mixin fa {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+// brands icons
+@mixin fab {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+}
+
+// breaking points
+
+@mixin view($media) {
+  @if $media ==xs {
+    @media only screen and (max-width: 580px) {
+      @content;
+    }
+  } @else if $media ==sm {
+    @media only screen and (max-width: 767px) {
+      @content;
+    }
+  } @else if $media ==pad {
+    @media only screen and (max-width: 768px) {
+      @content;
+    }
+  } @else if $media ==padlan {
+    @media only screen and (max-width: 1024px) and (orientation: landscape) {
+      @content;
+    }
+  } @else if $media ==md-up {
+    @media only screen and (min-width: 768px) {
+      @content;
+    }
+  } @else if $media ==md {
+    @media only screen and (max-width: 991px) {
+      @content;
+    }
+  } @else if $media ==lg {
+    @media only screen and (max-width: 1199px) {
+      @content;
+    }
+  } @else if $media ==tablet {
+    @media only screen and (max-width: 1024px) {
+      @content;
+    }
+  } @else if $media ==small-pc {
+    @media only screen and (max-width: 1440px) {
+      @content;
+    }
+  } @else if $media ==wrapper-width {
+    @media only screen and (min-width: 1394px) {
+      @content;
+    }
+  } @else if $media ==lg-up {
+    @media only screen and (min-width: 992px) {
+      @content;
+    }
+  } @else if $media ==xl {
+    @media only screen and (min-width: 1200px) {
+      @content;
+    }
+  } @else if $media ==xxl {
+    @media only screen and (max-width: 1640px) {
+      @content;
+    }
+  }
+}

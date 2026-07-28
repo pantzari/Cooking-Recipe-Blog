@@ -1,0 +1,127 @@
+@use "../../variables" as v;
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 15px 24px;
+  background-color: v.$bg-color;
+  border: 3px solid v.$border-color;
+  border-radius: 9999px;
+  font-family: "Roboto", sans-serif;
+  max-width: 1312px;
+  margin: 1.5rem auto;
+
+
+  .logo-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+
+    padding: 24px;
+
+    img {
+      width: 40px;
+      height: 36px;
+      display: block;
+    }
+
+    .brand {
+      color: v.$text-dark;
+      font-weight: 800;
+      font-size: 0.95rem;
+      line-height: 1.1;
+      text-transform: uppercase;
+      letter-spacing: -0.02em;
+    }
+  }
+
+
+  .nav {
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      position: relative;
+      text-decoration: none;
+      color: v.$text-muted;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding-bottom: 0.35rem;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: v.$text-dark;
+      }
+
+      &.active {
+        color: v.$text-dark;
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 3px;
+          background-color: v.$red;
+          border-radius: 2px;
+        }
+      }
+    }
+  }
+
+  // Right Side Buttons
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+
+    .search-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, 0.05);
+      border: none;
+      color: v.$text-dark;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    .subscribe-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.7rem 1.5rem;
+      background-color: v.$text-dark;
+      color: #ffffff;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      text-decoration: none;
+      border-radius: 9999px;
+      transition: opacity 0.2s ease;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+}
