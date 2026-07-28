@@ -103,7 +103,7 @@ body {
 
 .wrapper {
   max-width: 1920px;
-  padding-inline: clamp(16px, 10vw, 64px);
+  padding-inline: clamp(16px, 7vw, 64px);
   margin-inline: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -111,6 +111,8 @@ body {
 }
 
 header {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -125,8 +127,30 @@ header {
   border: 3px solid #bbb6ab;
   border-radius: 9999px;
   font-family: "Roboto", sans-serif;
-  max-width: 1312px;
+  max-width: clamp(1312px, 90vw, 1890px);
+  width: calc(100% - 20px);
   margin: 1.5rem auto;
+}
+@media only screen and (max-width: 1024px) {
+  header {
+    width: clamp(343px, 90vw, 800px);
+    padding-inline: 16px;
+    margin: 16px auto;
+  }
+}
+header .burger-menu {
+  display: none;
+}
+@media only screen and (max-width: 1024px) {
+  header .burger-menu {
+    display: block;
+  }
+  header .burger-menu .burger {
+    all: unset;
+    cursor: pointer;
+    width: 34px;
+    height: 34px;
+  }
 }
 header .logo-wrap {
   display: -webkit-box;
@@ -138,6 +162,11 @@ header .logo-wrap {
   gap: 8px;
   text-decoration: none;
   padding: 24px;
+}
+@media only screen and (max-width: 1024px) {
+  header .logo-wrap {
+    padding: 16px;
+  }
 }
 header .logo-wrap img {
   width: 40px;
@@ -151,6 +180,11 @@ header .logo-wrap .brand {
   line-height: 1.1;
   text-transform: uppercase;
   letter-spacing: -0.02em;
+}
+@media only screen and (max-width: 1024px) {
+  header .nav {
+    display: none;
+  }
 }
 header .nav ul {
   display: -webkit-box;
@@ -201,6 +235,11 @@ header .actions {
       -ms-flex-align: center;
           align-items: center;
   gap: 0.75rem;
+}
+@media only screen and (max-width: 1024px) {
+  header .actions {
+    display: none;
+  }
 }
 header .actions .search-btn {
   display: -webkit-box;
@@ -253,6 +292,204 @@ header .actions .subscribe-btn:hover {
   opacity: 0.9;
 }
 
+/* --- dropdown menu --- */
+.mobile-menu-overlay {
+  display: none;
+}
+@media only screen and (max-width: 1024px) {
+  .mobile-menu-overlay {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #23211f;
+    z-index: 9999;
+    padding: 34px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+            transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 0.3s ease, visibility 0.4s, -webkit-transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: opacity 0.3s ease, visibility 0.4s, -webkit-transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    -o-transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease, visibility 0.4s;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease, visibility 0.4s;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease, visibility 0.4s, -webkit-transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .mobile-menu-overlay.is-open {
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  .mobile-menu-overlay .mobile-menu-card {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .mobile-menu-overlay .mobile-menu-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 10px;
+  }
+  .mobile-menu-overlay .mobile-menu-header .logo-wrap {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 8px;
+  }
+  .mobile-menu-overlay .mobile-menu-header .logo-wrap span {
+    font-weight: bold;
+  }
+  .mobile-menu-overlay .mobile-menu-header .logo-wrap .brand {
+    color: #ffffff;
+  }
+  .mobile-menu-overlay .mobile-menu-header .close-btn {
+    all: unset;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: -webkit-transform 0.2s ease;
+    transition: -webkit-transform 0.2s ease;
+    -o-transition: transform 0.2s ease;
+    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+  }
+  .mobile-menu-overlay .mobile-menu-header .close-btn:active {
+    -webkit-transform: scale(0.95);
+        -ms-transform: scale(0.95);
+            transform: scale(0.95);
+  }
+  .mobile-menu-overlay .mobile-nav {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .mobile-menu-overlay .mobile-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .mobile-menu-overlay .mobile-nav li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .mobile-menu-overlay .mobile-nav li:last-child {
+    border-bottom: none;
+  }
+  .mobile-menu-overlay .mobile-nav a {
+    display: block;
+    padding: 18px 0;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    -webkit-transition: color 0.2s ease;
+    -o-transition: color 0.2s ease;
+    transition: color 0.2s ease;
+  }
+  .mobile-menu-overlay .mobile-nav a:hover {
+    color: #ee6352;
+  }
+  .mobile-menu-overlay .mobile-actions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  .mobile-menu-overlay .mobile-actions .search-btn {
+    all: unset;
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #ffffff;
+  }
+  .mobile-menu-overlay .mobile-actions .subscribe-btn {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 48px;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    border-radius: 9999px;
+  }
+  .mobile-menu-overlay .mobile-socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 24px;
+  }
+  .mobile-menu-overlay .mobile-socials a {
+    color: #f3efe9;
+  }
+}
+
 #hero .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -291,6 +528,11 @@ header .actions .subscribe-btn:hover {
           transform: translate(-50%, -50%);
   text-align: center;
 }
+@media only screen and (max-width: 1024px) {
+  #hero .wrapper .hero-banner .hero-content {
+    padding-inline: 16px;
+  }
+}
 #hero .wrapper .hero-banner .hero-content h1,
 #hero .wrapper .hero-banner .hero-content p {
   color: #f0ebe1;
@@ -300,7 +542,7 @@ header .actions .subscribe-btn:hover {
   line-height: 0.9;
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
-  font-size: clamp(38px, 10vw, 80px);
+  font-size: clamp(38px, 5vw, 80px);
 }
 #hero .wrapper .hero-banner .hero-content p {
   max-width: 427px;
@@ -378,6 +620,69 @@ header .actions .subscribe-btn:hover {
     -webkit-filter: blur(16px);
             filter: blur(16px);
   }
+}
+
+#explore-palette {
+  padding-top: 16px;
+}
+#explore-palette .wrapper .palette-container {
+  border-radius: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #c4e5fc;
+  min-height: 500px;
+  padding: 40px;
+}
+#explore-palette .wrapper .palette-container .left-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+#explore-palette .wrapper .palette-container .left-column h2 {
+  font-size: 40px;
+  width: 50%;
+}
+#explore-palette .wrapper .palette-container .left-column p {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  width: 60%;
+}
+#explore-palette .wrapper .palette-container .left-column button {
+  width: 100px;
+}
+#explore-palette .wrapper .palette-container .right-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 16px;
+}
+#explore-palette .wrapper .palette-container .right-column .choice-wrap {
+  min-width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px;
 }
 
 /*# sourceMappingURL=index.css.map */
