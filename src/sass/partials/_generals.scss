@@ -17,3 +17,21 @@ body {
   box-sizing: border-box;
   width: 100%;
 }
+
+.see-more {
+  all: unset;
+  border: 2px solid v.$text-dark;
+  border-radius: 24px;
+  padding: 12px 24px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  color: v.$text-dark;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.132);
+  }
+}

@@ -114,7 +114,7 @@
 }
 
 #explore-palette {
-  padding-top: 16px;
+  padding-top: 20px;
 
   .wrapper {
     .palette-container {
@@ -124,18 +124,35 @@
       background-color: #c4e5fc;
       min-height: 500px;
       padding: 40px;
+      @include v.view(tablet) {
+        flex-direction: column;
+        padding: 24px;
+      }
       .left-column {
         display: flex;
         flex-direction: column;
         justify-content: end;
+        @include v.view(tablet) {
+          margin-bottom: 60px;
+        }
         h2 {
-          font-size: 40px;
+          font-size: clamp(26px, 2vw, 40px);
           width: 50%;
+          color: v.$text-dark;
+          @include v.view(tablet) {
+            width: 90%;
+          }
         }
         p {
-          font-size: 16px;
+          font-size: clamp(14px, 5vw, 16px);
           font-family: "Roboto", sans-serif;
           width: 60%;
+          color: v.$text-dark;
+          padding-top: 12px;
+          padding-bottom: 40px;
+          @include v.view(tablet) {
+            width: 100%;
+          }
         }
         button {
           width: 100px;
@@ -147,12 +164,33 @@
         justify-content: center;
         gap: 16px;
         .choice-wrap {
-          min-width: 500px;
+          min-width: 400px;
           display: flex;
           justify-content: space-between;
           padding: 16px;
+          border-bottom: 2px solid #1f1f264b;
+          padding-bottom: 14px;
+          @include v.view(tablet) {
+            align-items: center;
+            justify-content: flex-start;
+            gap: clamp(140px, 5vw, 190px);
+            min-width: unset;
+            padding-right: 0;
+            padding-left: 0;
+          }
+          span {
+            text-transform: uppercase;
+            color: v.$text-dark;
+            font-family: "Roboto", sans-serif;
+            font-size: clamp(14px, 2vw, 18px);
+            font-weight: 600;
+            width: 100%;
+            text-align: end;
+            white-space: nowrap;
+          }
         }
       }
     }
   }
 }
+/// TO DO :: MADE THE SEE MORE AS A GENERAL BUTTON

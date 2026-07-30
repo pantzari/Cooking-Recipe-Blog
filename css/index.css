@@ -110,6 +110,30 @@ body {
   width: 100%;
 }
 
+.see-more {
+  all: unset;
+  border: 2px solid #232321;
+  border-radius: 24px;
+  padding: 12px 24px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  color: #232321;
+  cursor: pointer;
+}
+.see-more:hover {
+  background-color: rgba(0, 0, 0, 0.132);
+}
+
 header {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -623,7 +647,7 @@ header .actions .subscribe-btn:hover {
 }
 
 #explore-palette {
-  padding-top: 16px;
+  padding-top: 20px;
 }
 #explore-palette .wrapper .palette-container {
   border-radius: 32px;
@@ -637,6 +661,15 @@ header .actions .subscribe-btn:hover {
   min-height: 500px;
   padding: 40px;
 }
+@media only screen and (max-width: 1024px) {
+  #explore-palette .wrapper .palette-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 24px;
+  }
+}
 #explore-palette .wrapper .palette-container .left-column {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -649,14 +682,33 @@ header .actions .subscribe-btn:hover {
       -ms-flex-pack: end;
           justify-content: end;
 }
+@media only screen and (max-width: 1024px) {
+  #explore-palette .wrapper .palette-container .left-column {
+    margin-bottom: 60px;
+  }
+}
 #explore-palette .wrapper .palette-container .left-column h2 {
-  font-size: 40px;
+  font-size: clamp(26px, 2vw, 40px);
   width: 50%;
+  color: #232321;
+}
+@media only screen and (max-width: 1024px) {
+  #explore-palette .wrapper .palette-container .left-column h2 {
+    width: 90%;
+  }
 }
 #explore-palette .wrapper .palette-container .left-column p {
-  font-size: 16px;
+  font-size: clamp(14px, 5vw, 16px);
   font-family: "Roboto", sans-serif;
   width: 60%;
+  color: #232321;
+  padding-top: 12px;
+  padding-bottom: 40px;
+}
+@media only screen and (max-width: 1024px) {
+  #explore-palette .wrapper .palette-container .left-column p {
+    width: 100%;
+  }
 }
 #explore-palette .wrapper .palette-container .left-column button {
   width: 100px;
@@ -675,7 +727,7 @@ header .actions .subscribe-btn:hover {
   gap: 16px;
 }
 #explore-palette .wrapper .palette-container .right-column .choice-wrap {
-  min-width: 500px;
+  min-width: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -683,6 +735,32 @@ header .actions .subscribe-btn:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 16px;
+  border-bottom: 2px solid #1f1f264b;
+  padding-bottom: 14px;
+}
+@media only screen and (max-width: 1024px) {
+  #explore-palette .wrapper .palette-container .right-column .choice-wrap {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: clamp(140px, 5vw, 190px);
+    min-width: unset;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+#explore-palette .wrapper .palette-container .right-column .choice-wrap span {
+  text-transform: uppercase;
+  color: #232321;
+  font-family: "Roboto", sans-serif;
+  font-size: clamp(14px, 2vw, 18px);
+  font-weight: 600;
+  width: 100%;
+  text-align: end;
+  white-space: nowrap;
 }
 
 /*# sourceMappingURL=index.css.map */
