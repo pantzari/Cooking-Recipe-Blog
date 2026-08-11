@@ -15,7 +15,7 @@ header {
   margin: 1.5rem auto;
 
   @include v.view(tablet) {
-    width: clamp(343px, 90vw, 800px);
+    width: clamp(343px, 90vw, 900px);
     padding-inline: 16px;
     margin: 16px auto;
   }
