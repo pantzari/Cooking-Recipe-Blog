@@ -1550,6 +1550,11 @@ footer .footer-bottom p {
   width: 100%;
   margin-top: 56px;
 }
+@media only screen and (max-width: 1024px) {
+  .featured-recipes-section {
+    margin-top: 20px;
+  }
+}
 .featured-recipes-section .wrapper .featured-card {
   max-width: 100%;
   margin-inline: auto;

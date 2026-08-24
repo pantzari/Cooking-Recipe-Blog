@@ -617,7 +617,9 @@
 .featured-recipes-section {
   width: 100%;
   margin-top: 56px;
-
+  @include v.view(tablet) {
+    margin-top: 20px;
+  }
   .wrapper {
     .featured-card {
       max-width: 100%;
@@ -628,6 +630,7 @@
       border-radius: 32px;
 
       box-sizing: border-box;
+
       .featured-header {
         display: flex;
         justify-content: space-between;
