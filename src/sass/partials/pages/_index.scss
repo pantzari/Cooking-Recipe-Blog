@@ -464,7 +464,9 @@
 
 #tabs {
   margin-top: 80px;
-  margin: 0 auto;
+  @include v.view(tablet) {
+    margin-top: 64px;
+  }
   .wrapper {
     display: flex;
     flex-direction: column;

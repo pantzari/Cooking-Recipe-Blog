@@ -1377,7 +1377,11 @@ footer .footer-bottom p {
 
 #tabs {
   margin-top: 80px;
-  margin: 0 auto;
+}
+@media only screen and (max-width: 1024px) {
+  #tabs {
+    margin-top: 64px;
+  }
 }
 #tabs .wrapper {
   display: -webkit-box;
