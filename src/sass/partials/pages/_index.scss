@@ -185,8 +185,8 @@
 
           @include v.view(tablet) {
             align-items: center;
-            justify-content: flex-start;
-            gap: clamp(140px, 5vw, 190px);
+            justify-content: space-between;
+            gap: 16px;
             min-width: unset;
             padding-right: 0;
             padding-left: 0;
@@ -464,7 +464,7 @@
 
 #tabs {
   margin-top: 80px;
-
+  margin: 0 auto;
   .wrapper {
     display: flex;
     flex-direction: column;
@@ -548,10 +548,10 @@
 
   .recipes-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+
+    grid-template-columns: repeat(auto-fill, minmax(min(360px, 100%), 1fr));
     gap: 24px;
     width: 100%;
-    // max-width: 1080px;
 
     @include v.view(tablet) {
       /* Hide every recipe card after the 4th item unless grid is expanded */
@@ -605,10 +605,9 @@
 
 .swiper-slide {
   height: auto;
-  box-sizing: border-box; /* Ensure padding/borders don't expand slide width */
+  box-sizing: border-box;
 }
 
-/* Force recipe card inside swiper slide to fit properly */
 .swiper-slide .recipe-card {
   width: 100%;
 }
@@ -651,13 +650,13 @@
         }
         .swiper-navigation {
           display: flex;
-          flex-direction: row; /* Aligns arrows side by side */
+          flex-direction: row;
           align-items: center;
-          gap: 12px; /* Space between the two arrows */
+          gap: 12px;
 
           .swiper-button-prev,
           .swiper-button-next {
-            position: static !important; /* Overrides Swiper's default absolute positioning */
+            position: static !important;
             top: auto;
             left: auto;
             right: auto;
@@ -687,5 +686,3 @@
     }
   }
 }
-
-// make featured recipes a component

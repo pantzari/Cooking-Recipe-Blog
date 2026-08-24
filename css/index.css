@@ -1063,10 +1063,10 @@ footer .footer-bottom p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    gap: clamp(140px, 5vw, 190px);
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 16px;
     min-width: unset;
     padding-right: 0;
     padding-left: 0;
@@ -1377,6 +1377,7 @@ footer .footer-bottom p {
 
 #tabs {
   margin-top: 80px;
+  margin: 0 auto;
 }
 #tabs .wrapper {
   display: -webkit-box;
@@ -1474,7 +1475,7 @@ footer .footer-bottom p {
 }
 #tabs .recipes-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(360px, 100%), 1fr));
   gap: 24px;
   width: 100%;
 }
@@ -1535,10 +1536,8 @@ footer .footer-bottom p {
   height: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  /* Ensure padding/borders don't expand slide width */
 }
 
-/* Force recipe card inside swiper slide to fit properly */
 .swiper-slide .recipe-card {
   width: 100%;
 }
@@ -1601,17 +1600,14 @@ footer .footer-bottom p {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  /* Aligns arrows side by side */
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   gap: 12px;
-  /* Space between the two arrows */
 }
 .featured-recipes-section .wrapper .featured-card .featured-header .swiper-navigation .swiper-button-prev,
 .featured-recipes-section .wrapper .featured-card .featured-header .swiper-navigation .swiper-button-next {
   position: static !important;
-  /* Overrides Swiper's default absolute positioning */
   top: auto;
   left: auto;
   right: auto;
