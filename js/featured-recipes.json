@@ -1,0 +1,349 @@
+[
+  {
+    "id": "berry-yogurt-breakfast-bowl",
+    "categories": ["ALL", "BREAKFAST", "QUICK BITE!"],
+    "title": "Berry Yogurt Breakfast Bowl",
+    "subtitle": "Creamy Greek Yogurt with Fresh Berries & Granola",
+    "description": "Creamy Greek yogurt topped with fresh berries, crunchy granola, honey, and a sprinkle of chia seeds.",
+    "meta": {
+      "prep_time": "5 MIN",
+      "difficulty": "EASY PREP",
+      "servings": "1 SERVE"
+    },
+    "badges": [],
+    "hero_image": {
+      "url": "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Greek yogurt bowl with berries and granola"
+    },
+    "introduction": [
+      "A creamy, refreshing breakfast that takes just minutes to put together.",
+      "Greek yogurt adds protein while berries and granola bring freshness and crunch."
+    ],
+    "dos_and_donts": {
+      "title": "Breakfast Bowl Tips",
+      "dos": [
+        {
+          "title": "Add Granola Last",
+          "text": "Add granola just before serving so it stays crunchy."
+        }
+      ],
+      "donts": [
+        {
+          "title": "Overload with Toppings",
+          "text": "Keep the toppings balanced so the yogurt remains the star."
+        }
+      ]
+    },
+    "ingredients": [
+      "1 cup Greek yogurt",
+      "1/2 cup mixed berries",
+      "1/4 cup granola",
+      "1 tsp honey",
+      "1 tsp chia seeds"
+    ],
+    "equipment_needed": ["Serving bowl", "Spoon"],
+    "nutritional_value": {
+      "serving_note": "Per bowl",
+      "disclaimer": "NOTE: NUTRITIONAL VALUES ARE APPROXIMATE.",
+      "calories": "~280",
+      "protein": "~17g",
+      "total_fat": "~7g",
+      "carbohydrates": "~36g"
+    },
+    "instructions_overview": "Add Greek yogurt to a bowl and top with berries, granola, honey, and chia seeds.",
+    "steps": [
+      {
+        "step_title": "BUILD THE BOWL",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80",
+          "alt": "Greek yogurt breakfast bowl"
+        },
+        "instructions": [
+          "Spoon Greek yogurt into a bowl.",
+          "Top with berries, granola, honey, and chia seeds."
+        ]
+      }
+    ],
+    "pairing_suggestions": {
+      "general": ["Drink: Coffee, green tea, or fresh orange juice."],
+      "detailed": [],
+      "summary": "Fresh, creamy, and ready in five minutes."
+    },
+    "author": {
+      "name": "Isabella Russo",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+      "bio": "Food writer and home chef."
+    }
+  },
+  {
+    "id": "avocado-egg-toast",
+    "categories": ["ALL", "BREAKFAST", "QUICK BITE!"],
+    "title": "Avocado & Egg Toast",
+    "subtitle": "Sourdough Toast with Soft Scrambled Egg",
+    "description": "Crispy sourdough topped with creamy avocado, soft scrambled egg, chili flakes, and fresh herbs.",
+    "meta": {
+      "prep_time": "10 MIN",
+      "difficulty": "EASY PREP",
+      "servings": "1 SERVE"
+    },
+    "badges": [],
+    "hero_image": {
+      "url": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Avocado egg toast"
+    },
+    "introduction": [
+      "A more filling take on classic avocado toast with creamy scrambled egg.",
+      "It is quick enough for breakfast but satisfying enough to keep you going."
+    ],
+    "dos_and_donts": {
+      "title": "Toast Tips",
+      "dos": [
+        {
+          "title": "Cook Eggs Gently",
+          "text": "Low heat keeps scrambled eggs soft and creamy."
+        }
+      ],
+      "donts": [
+        {
+          "title": "Overcook the Eggs",
+          "text": "Remove them from heat while they still look slightly glossy."
+        }
+      ]
+    },
+    "ingredients": [
+      "1 thick slice sourdough",
+      "1/2 ripe avocado",
+      "2 eggs",
+      "1 tsp olive oil",
+      "1 tsp lemon juice",
+      "Chili flakes",
+      "Fresh parsley",
+      "Salt and pepper"
+    ],
+    "equipment_needed": ["Toaster", "Small skillet", "Fork"],
+    "nutritional_value": {
+      "serving_note": "Per toast",
+      "disclaimer": "NOTE: NUTRITIONAL VALUES ARE APPROXIMATE.",
+      "calories": "~340",
+      "protein": "~15g",
+      "total_fat": "~22g",
+      "carbohydrates": "~23g"
+    },
+    "instructions_overview": "Toast the bread, mash the avocado, then top with gently scrambled eggs and seasonings.",
+    "steps": [
+      {
+        "step_title": "PREPARE THE TOPPING",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80",
+          "alt": "Avocado and scrambled egg toast"
+        },
+        "instructions": [
+          "Toast the sourdough and mash avocado with lemon juice.",
+          "Scramble eggs gently in olive oil until soft."
+        ]
+      },
+      {
+        "step_title": "ASSEMBLE",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80",
+          "alt": "Finished avocado egg toast"
+        },
+        "instructions": [
+          "Spread avocado over the toast.",
+          "Top with scrambled egg, chili flakes, parsley, salt, and pepper."
+        ]
+      }
+    ],
+    "pairing_suggestions": {
+      "general": ["Drink: Coffee or fresh orange juice."],
+      "detailed": [],
+      "summary": "Creamy, savory, and packed with protein."
+    },
+    "author": {
+      "name": "Isabella Russo",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+      "bio": "Food writer and home chef."
+    }
+  },
+  {
+    "id": "salmon-avocado-rice-bowl",
+    "categories": ["ALL", "LUNCH", "DINNER"],
+    "title": "Salmon & Avocado Rice Bowl",
+    "subtitle": "Roasted Salmon with Rice, Avocado & Cucumber",
+    "description": "Flaky roasted salmon served over rice with creamy avocado, cucumber, sesame, and lemon.",
+    "meta": {
+      "prep_time": "25 MIN",
+      "difficulty": "EASY PREP",
+      "servings": "2 SERVES"
+    },
+    "badges": [],
+    "hero_image": {
+      "url": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Salmon avocado rice bowl"
+    },
+    "introduction": [
+      "A colorful bowl combining tender salmon with fresh vegetables and fluffy rice.",
+      "A balanced option for lunch or dinner when you want something nourishing but substantial."
+    ],
+    "dos_and_donts": {
+      "title": "Salmon Tips",
+      "dos": [
+        {
+          "title": "Check the Center",
+          "text": "Cook salmon until the center flakes easily and reaches a safe internal temperature."
+        }
+      ],
+      "donts": [
+        {
+          "title": "Overcook the Salmon",
+          "text": "Avoid leaving salmon in the oven longer than necessary so it stays moist."
+        }
+      ]
+    },
+    "ingredients": [
+      "2 salmon fillets",
+      "2 cups cooked rice",
+      "1 avocado",
+      "1/2 cucumber",
+      "1 tsp sesame seeds",
+      "1 lemon",
+      "1 tbsp olive oil",
+      "Salt and pepper"
+    ],
+    "equipment_needed": ["Baking tray", "Rice cooker or saucepan"],
+    "nutritional_value": {
+      "serving_note": "Per bowl",
+      "disclaimer": "NOTE: NUTRITIONAL VALUES ARE APPROXIMATE.",
+      "calories": "~520",
+      "protein": "~34g",
+      "total_fat": "~23g",
+      "carbohydrates": "~43g"
+    },
+    "instructions_overview": "Roast seasoned salmon, prepare rice and vegetables, then assemble everything into a bowl.",
+    "steps": [
+      {
+        "step_title": "ROAST THE SALMON",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80",
+          "alt": "Roasted salmon fillet"
+        },
+        "instructions": [
+          "Season salmon with olive oil, lemon, salt, and pepper.",
+          "Roast until flaky and fully cooked."
+        ]
+      },
+      {
+        "step_title": "ASSEMBLE THE BOWL",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80",
+          "alt": "Salmon rice bowl"
+        },
+        "instructions": [
+          "Add rice to bowls.",
+          "Top with salmon, avocado, cucumber, sesame seeds, and lemon."
+        ]
+      }
+    ],
+    "pairing_suggestions": {
+      "general": ["Drink: Sparkling water with lemon."],
+      "detailed": [],
+      "summary": "Fresh, colorful, and packed with satisfying protein."
+    },
+    "author": {
+      "name": "Isabella Russo",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+      "bio": "Food writer and home chef."
+    }
+  },
+  {
+    "id": "greek-chicken-pita",
+    "categories": ["ALL", "LUNCH", "DINNER"],
+    "title": "Greek Chicken Pita",
+    "subtitle": "Grilled Chicken with Tzatziki & Fresh Vegetables",
+    "description": "Warm pita filled with seasoned chicken, crisp lettuce, tomato, cucumber, and creamy tzatziki.",
+    "meta": {
+      "prep_time": "15 MIN",
+      "difficulty": "EASY PREP",
+      "servings": "2 SERVES"
+    },
+    "badges": [],
+    "hero_image": {
+      "url": "https://images.unsplash.com/photo-1561651823-34feb02250e4?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Greek chicken pita"
+    },
+    "introduction": [
+      "A fresh Mediterranean-inspired meal with juicy chicken and crunchy vegetables.",
+      "Perfect for lunch or dinner."
+    ],
+    "dos_and_donts": {
+      "title": "Pita Tips",
+      "dos": [
+        {
+          "title": "Warm the Pita",
+          "text": "Heating the pita briefly makes it softer and easier to fold."
+        }
+      ],
+      "donts": [
+        {
+          "title": "Add Too Much Sauce",
+          "text": "A moderate amount of tzatziki keeps the pita from becoming soggy."
+        }
+      ]
+    },
+    "ingredients": [
+      "2 pita breads",
+      "250g chicken breast",
+      "1/2 cucumber",
+      "1 tomato",
+      "1 cup lettuce",
+      "1/2 cup tzatziki",
+      "1 tsp oregano",
+      "1 tbsp olive oil",
+      "Salt and pepper"
+    ],
+    "equipment_needed": ["Grill pan", "Knife"],
+    "nutritional_value": {
+      "serving_note": "Per pita",
+      "disclaimer": "NOTE: NUTRITIONAL VALUES ARE APPROXIMATE.",
+      "calories": "~420",
+      "protein": "~34g",
+      "total_fat": "~14g",
+      "carbohydrates": "~39g"
+    },
+    "instructions_overview": "Season and cook the chicken, slice the vegetables, then fill warm pita bread with all ingredients.",
+    "steps": [
+      {
+        "step_title": "COOK THE CHICKEN",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1561651823-34feb02250e4?auto=format&fit=crop&w=800&q=80",
+          "alt": "Cooking Greek chicken"
+        },
+        "instructions": [
+          "Season chicken with oregano, salt, pepper, and olive oil.",
+          "Cook in a hot grill pan until golden and fully cooked."
+        ]
+      },
+      {
+        "step_title": "FILL THE PITA",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1561651823-34feb02250e4?auto=format&fit=crop&w=800&q=80",
+          "alt": "Greek chicken pita"
+        },
+        "instructions": [
+          "Warm the pita briefly.",
+          "Fill with lettuce, tomato, cucumber, chicken, and tzatziki."
+        ]
+      }
+    ],
+    "pairing_suggestions": {
+      "general": ["Serve with sparkling water and lemon."],
+      "detailed": [],
+      "summary": "Fresh Mediterranean flavors in a convenient handheld meal."
+    },
+    "author": {
+      "name": "Sophia Al-Mansoor",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
+      "bio": "Culinary instructor & nutritionist."
+    }
+  }
+]

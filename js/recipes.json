@@ -1,0 +1,983 @@
+{
+  "recipes": [
+    {
+      "id": "berry-yogurt-breakfast-bowl",
+      "categories": ["ALL", "BREAKFAST", "QUICK BITE!"],
+      "title": "Berry Yogurt Breakfast Bowl",
+      "subtitle": "Creamy Greek Yogurt with Fresh Berries & Granola",
+      "description": "Creamy Greek yogurt topped with fresh berries, crunchy granola, honey, and a sprinkle of chia seeds.",
+      "meta": {
+        "prep_time": "5 MIN",
+        "difficulty": "EASY PREP",
+        "servings": "1 SERVE"
+      },
+      "badges": [],
+      "hero_image": {
+        "url": "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Greek yogurt bowl with berries and granola"
+      },
+      "introduction": [
+        "A creamy, refreshing breakfast that takes just minutes to put together.",
+        "Greek yogurt adds protein while berries and granola bring freshness and crunch."
+      ],
+      "dos_and_donts": {
+        "title": "Breakfast Bowl Tips",
+        "dos": [
+          {
+            "title": "Add Granola Last",
+            "text": "Add granola just before serving so it stays crunchy."
+          }
+        ],
+        "donts": [
+          {
+            "title": "Overload with Toppings",
+            "text": "Keep the toppings balanced so the yogurt remains the star."
+          }
+        ]
+      },
+      "ingredients": [
+        "1 cup Greek yogurt",
+        "1/2 cup mixed berries",
+        "1/4 cup granola",
+        "1 tsp honey",
+        "1 tsp chia seeds"
+      ],
+      "equipment_needed": ["Serving bowl", "Spoon"],
+      "nutritional_value": {
+        "serving_note": "Per bowl",
+        "disclaimer": "NOTE: NUTRITIONAL VALUES ARE APPROXIMATE.",
+        "calories": "~280",
+        "protein": "~17g",
+        "total_fat": "~7g",
+        "carbohydrates": "~36g"
+      },
+      "instructions_overview": "Add Greek yogurt to a bowl and top with berries, granola, honey, and chia seeds.",
+      "steps": [
+        {
+          "step_title": "BUILD THE BOWL",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80",
+            "alt": "Greek yogurt breakfast bowl"
+          },
+          "instructions": [
+            "Spoon Greek yogurt into a bowl.",
+            "Top with berries, granola, honey, and chia seeds."
+          ]
+        }
+      ],
+      "pairing_suggestions": {
+        "general": ["Drink: Coffee, green tea, or fresh orange juice."],
+        "detailed": [],
+        "summary": "Fresh, creamy, and ready in five minutes."
+      },
+      "author": {
+        "name": "Isabella Russo",
+        "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+        "bio": "Food writer and home chef."
+      }
+    },
+    {
+      "id": "crispy-tofu-avocado-wrap",
+      "categories": ["ALL", "VEGAN", "QUICK BITE!", "LUNCH"],
+      "title": "Crispy Tofu & Avocado Wrap",
+      "subtitle": "Pan-Seared Tofu Wrap with Creamy Avocado & Lime",
+      "description": "Golden crispy tofu, creamy sliced avocado, crisp romaine lettuce, and dairy-free garlic mayo rolled into a warm whole-wheat wrap.",
+      "meta": {
+        "prep_time": "10 MIN",
+        "difficulty": "EASY PREP",
+        "servings": "1 SERVE"
+      },
+      "badges": ["VEGAN"],
+      "hero_image": {
+        "url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Crispy tofu and avocado wrap"
+      },
+      "introduction": [
+        "A fast, plant-based wrap loaded with savory protein and healthy fats.",
+        "Pan-seared tofu provides crunch without long cooking times."
+      ],
+      "dos_and_donts": {
+        "title": "Wrap Tips",
+        "dos": [
+          {
+            "title": "Press the Tofu",
+            "text": "Pat tofu dry with a towel so it browns and turns golden quickly in the pan."
+          }
+        ],
+        "donts": [
+          {
+            "title": "Overfill the Wrap",
+            "text": "Keep ingredients centered to ensure a tight, mess-free roll."
+          }
+        ]
+      },
+      "ingredients": [
+        "1 large whole-wheat tortilla",
+        "100g firm tofu, sliced",
+        "1/2 ripe avocado, sliced",
+        "1 cup romaine lettuce, shredded",
+        "1 tbsp vegan mayonnaise",
+        "1 tsp lime juice",
+        "1/2 tsp garlic powder",
+        "1 tsp olive oil",
+        "Salt and pepper"
+      ],
+      "equipment_needed": ["Non-stick skillet", "Spatula", "Cutting board"],
+      "nutritional_value": {
+        "serving_note": "Per wrap",
+        "disclaimer": "NOTE: NUTRITIONAL VALUES ARE APPROXIMATE.",
+        "calories": "~370",
+        "protein": "~16g",
+        "total_fat": "~18g",
+        "carbohydrates": "~38g"
+      },
+      "instructions_overview": "Sear seasoned tofu slices until golden, then wrap with avocado, lettuce, and vegan garlic mayo.",
+      "steps": [
+        {
+          "step_title": "SEAR TOFU AND ASSEMBLE",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80",
+            "alt": "Pan seared tofu in wrap"
+          },
+          "instructions": [
+            "Sear tofu slices in olive oil with garlic powder, salt, and pepper for 5 minutes until crispy.",
+            "Spread vegan mayo over tortilla, layer tofu, avocado, and lettuce, sprinkle lime juice, and roll tightly."
+          ]
+        }
+      ],
+      "pairing_suggestions": {
+        "general": [
+          "Serve with baked vegetable chips or lemon sparkling water."
+        ],
+        "detailed": [],
+        "summary": "Crispy, savory, and ready in ten minutes."
+      },
+      "author": {
+        "name": "Marcus Chen",
+        "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
+        "bio": "Plant-based recipe developer."
+      }
+    },
+    {
+      "id": "honey-garlic-chicken-rice",
+      "categories": ["ALL", "LUNCH", "DINNER"],
+      "title": "Honey Garlic Chicken Rice Bowl",
+      "subtitle": "Tender Chicken with Steamed Rice & Vegetables",
+      "description": "Juicy chicken pieces glazed with honey and garlic served over fluffy rice with crisp vegetables.",
+      "meta": {
+        "prep_time": "25 MIN",
+        "difficulty": "EASY PREP",
+        "servings": "2 SERVES"
+      },
+      "badges": [],
+      "hero_image": {
+        "url": "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Chicken rice bowl with vegetables"
+      },
+      "introduction": [
+        "A simple chicken bowl with a sweet-savory glaze and plenty of colorful vegetables.",
+        "Perfect for a satisfying lunch or easy weeknight dinner."
+      ],
+      "dos_and_donts": {
+        "title": "Chicken Bowl Tips",
+        "dos": [
+          {
+            "title": "Cut Chicken Evenly",
+            "text": "Uniform pieces cook at the same rate and stay juicy."
+          }
+        ],
+        "donts": [
+          {
+            "title": "Overcook the Chicken",
+            "text": "Remove the chicken once fully cooked to keep it tender."
+          }
+        ]
+      },
+      "ingredients": [
+        "300g boneless chicken breast",
+        "2 cups cooked white rice",
+        "1 tbsp honey",
+        "1 tbsp soy sauce",
+        "2 garlic cloves, minced",
+        "1 cup broccoli",
+        "1 carrot, sliced",
+        "1 tbsp olive oil"
+      ],
+      "equipment_needed": [
+        "Large skillet",
+        "Small bowl",
+        "Rice cooker or saucepan"
+      ],
+      "nutritional_value": {
+        "serving_note": "Per bowl",
+        "disclaimer": "NOTE: NUTRITIONAL VALUES ARE APPROXIMATE.",
+        "calories": "~480",
+        "protein": "~36g",
+        "total_fat": "~12g",
+        "carbohydrates": "~55g"
+      },
+      "instructions_overview": "Cook chicken with garlic, honey, and soy sauce, then serve over rice with steamed vegetables.",
+      "steps": [
+        {
+          "step_title": "COOK THE CHICKEN",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=800&q=80",
+            "alt": "Cooking chicken for rice bowl"
+          },
+          "instructions": [
+            "Cut chicken into bite-sized pieces and cook in olive oil until golden.",
+            "Add garlic, honey, and soy sauce and cook until the chicken is coated."
+          ]
+        },
+        {
+          "step_title": "ASSEMBLE THE BOWL",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=800&q=80",
+            "alt": "Chicken rice bowl"
+          },
+          "instructions": [
+            "Add cooked rice to a bowl.",
+            "Top with chicken and steamed vegetables."
+          ]
+        }
+      ],
+      "pairing_suggestions": {
+        "general": ["Drink: Sparkling water with lemon."],
+        "detailed": [],
+        "summary": "Balanced, filling, and easy enough for a weeknight."
+      },
+      "author": {
+        "name": "Sophia Al-Mansoor",
+        "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
+        "bio": "Culinary instructor & nutritionist."
+      }
+    },
+    {
+      "id": "tuna-avocado-wrap",
+      "categories": ["ALL", "QUICK BITE!", "LUNCH"],
+      "title": "Tuna & Avocado Wrap",
+      "subtitle": "Fresh Tuna Salad with Creamy Avocado",
+      "description": "A quick tortilla wrap filled with tuna, avocado, lettuce, tomato, and lemon.",
+      "meta": {
+        "prep_time": "10 MIN",
+        "difficulty": "EASY PREP",
+        "servings": "1 SERVE"
+      },
+      "badges": [],
+      "hero_image": {
+        "url": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Tuna avocado wrap"
+      },
+      "introduction": [
+        "A fresh protein-packed wrap that requires no cooking.",
+        "Creamy avocado balances the savory tuna while crisp vegetables add texture."
+      ],
+      "dos_and_donts": {
+        "title": "Wrap Tips",
+        "dos": [
+          {
+            "title": "Drain Tuna Well",
+            "text": "Removing excess liquid keeps the tortilla from becoming soggy."
+          }
+        ],
+        "donts": [
+          {
+            "title": "Overfill the Wrap",
+            "text": "Leave enough space around the edges to roll it tightly."
+          }
+        ]
+      },
+      "ingredients": [
+        "1 large whole-wheat tortilla",
+        "1 can tuna in water, drained",
+        "1/2 ripe avocado",
+        "1 tbsp Greek yogurt",
+        "1 tsp lemon juice",
+        "1/2 tomato, diced",
+        "1/2 cup lettuce",
+        "Salt and pepper"
+      ],
+      "equipment_needed": ["Mixing bowl", "Knife"],
+      "nutritional_value": {
+        "serving_note": "Per wrap",
+        "disclaimer": "NOTE: NUTRITIONAL VALUES ARE APPROXIMATE.",
+        "calories": "~380",
+        "protein": "~29g",
+        "total_fat": "~15g",
+        "carbohydrates": "~34g"
+      },
+      "instructions_overview": "Mix tuna with Greek yogurt and lemon, then layer with avocado and vegetables inside a tortilla.",
+      "steps": [
+        {
+          "step_title": "MIX THE FILLING",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=800&q=80",
+            "alt": "Tuna wrap filling"
+          },
+          "instructions": [
+            "Mix drained tuna with Greek yogurt, lemon juice, salt, and pepper.",
+            "Spread the mixture over the tortilla."
+          ]
+        },
+        {
+          "step_title": "ROLL AND SERVE",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=800&q=80",
+            "alt": "Rolled tuna avocado wrap"
+          },
+          "instructions": [
+            "Add avocado, tomato, and lettuce.",
+            "Fold the sides inward and roll tightly."
+          ]
+        }
+      ],
+      "pairing_suggestions": {
+        "general": ["Serve with fresh fruit or a small side salad."],
+        "detailed": [],
+        "summary": "Fresh, filling, and completely no-cook."
+      },
+      "author": {
+        "name": "Isabella Russo",
+        "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+        "bio": "Food writer and home chef."
+      }
+    },
+    {
+      "id": "creamy-tomato-pasta",
+      "categories": ["ALL", "VEGAN", "LUNCH", "DINNER"],
+      "title": "Creamy Tomato & Basil Pasta",
+      "subtitle": "Garlic Tomato Pasta with Coconut Cream & Basil",
+      "description": "Comforting pasta tossed in a silky vegan tomato sauce made with garlic, coconut cream, fresh basil, and nutritional yeast.",
+      "meta": {
+        "prep_time": "20 MIN",
+        "difficulty": "EASY PREP",
+        "servings": "2 SERVES"
+      },
+      "badges": ["VEGAN"],
+      "hero_image": {
+        "url": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Creamy tomato pasta"
+      },
+      "introduction": [
+        "A quick plant-based comfort-food classic made with simple pantry ingredients.",
+        "Coconut cream and nutritional yeast provide a rich, savory texture without any dairy."
+      ],
+      "dos_and_donts": {
+        "title": "Pasta Tips",
+        "dos": [
+          {
+            "title": "Save Pasta Water",
+            "text": "A splash of starchy pasta water helps loosen and emulsify the sauce."
+          }
+        ],
+        "donts": [
+          {
+            "title": "Overcook the Pasta",
+            "text": "Cook until al dente so the pasta keeps its texture."
+          }
+        ]
+      },
+      "ingredients": [
+        "200g penne pasta",
+        "1 cup tomato passata",
+        "1/4 cup canned coconut cream",
+        "2 garlic cloves",
+        "1 tbsp olive oil",
+        "2 tbsp nutritional yeast",
+        "Fresh basil",
+        "Salt and black pepper"
+      ],
+      "equipment_needed": ["Pasta pot", "Large skillet"],
+      "nutritional_value": {
+        "serving_note": "Per portion",
+        "disclaimer": "NOTE: NUTRITIONAL VALUES ARE APPROXIMATE.",
+        "calories": "~420",
+        "protein": "~12g",
+        "total_fat": "~14g",
+        "carbohydrates": "~60g"
+      },
+      "instructions_overview": "Cook pasta al dente, simmer garlic tomato passata with coconut cream and nutritional yeast, then toss together.",
+      "steps": [
+        {
+          "step_title": "MAKE THE SAUCE",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=800&q=80",
+            "alt": "Creamy tomato pasta sauce"
+          },
+          "instructions": [
+            "Sauté garlic in olive oil for one minute.",
+            "Add tomato passata and simmer for five minutes before stirring in coconut cream and nutritional yeast."
+          ]
+        },
+        {
+          "step_title": "COMBINE AND SERVE",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=800&q=80",
+            "alt": "Creamy tomato pasta with basil"
+          },
+          "instructions": [
+            "Add cooked pasta and a splash of pasta water to the sauce.",
+            "Toss well and garnish with fresh basil."
+          ]
+        }
+      ],
+      "pairing_suggestions": {
+        "general": ["Serve with a simple green salad."],
+        "detailed": [],
+        "summary": "Creamy, comforting, and ready in twenty minutes."
+      },
+      "author": {
+        "name": "Marcus Chen",
+        "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
+        "bio": "Plant-based recipe developer."
+      }
+    },
+    {
+      "id": "greek-chicken-pita",
+      "categories": ["ALL", "LUNCH", "DINNER"],
+      "title": "Greek Chicken Pita",
+      "subtitle": "Grilled Chicken with Tzatziki & Fresh Vegetables",
+      "description": "Warm pita filled with seasoned chicken, crisp lettuce, tomato, cucumber, and creamy tzatziki.",
+      "meta": {
+        "prep_time": "15 MIN",
+        "difficulty": "EASY PREP",
+        "servings": "2 SERVES"
+      },
+      "badges": [],
+      "hero_image": {
+        "url": "https://images.unsplash.com/photo-1561651823-34feb02250e4?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Greek chicken pita"
+      },
+      "introduction": [
+        "A fresh Mediterranean-inspired meal with juicy chicken and crunchy vegetables.",
+        "Perfect for lunch or dinner."
+      ],
+      "dos_and_donts": {
+        "title": "Pita Tips",
+        "dos": [
+          {
+            "title": "Warm the Pita",
+            "text": "Heating the pita briefly makes it softer and easier to fold."
+          }
+        ],
+        "donts": [
+          {
+            "title": "Add Too Much Sauce",
+            "text": "A moderate amount of tzatziki keeps the pita from becoming soggy."
+          }
+        ]
+      },
+      "ingredients": [
+        "2 pita breads",
+        "250g chicken breast",
+        "1/2 cucumber",
+        "1 tomato",
+        "1 cup lettuce",
+        "1/2 cup tzatziki",
+        "1 tsp oregano",
+        "1 tbsp olive oil",
+        "Salt and pepper"
+      ],
+      "equipment_needed": ["Grill pan", "Knife"],
+      "nutritional_value": {
+        "serving_note": "Per pita",
+        "disclaimer": "NOTE: NUTRITIONAL VALUES ARE APPROXIMATE.",
+        "calories": "~420",
+        "protein": "~34g",
+        "total_fat": "~14g",
+        "carbohydrates": "~39g"
+      },
+      "instructions_overview": "Season and cook the chicken, slice the vegetables, then fill warm pita bread with all ingredients.",
+      "steps": [
+        {
+          "step_title": "COOK THE CHICKEN",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1561651823-34feb02250e4?auto=format&fit=crop&w=800&q=80",
+            "alt": "Cooking Greek chicken"
+          },
+          "instructions": [
+            "Season chicken with oregano, salt, pepper, and olive oil.",
+            "Cook in a hot grill pan until golden and fully cooked."
+          ]
+        },
+        {
+          "step_title": "FILL THE PITA",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1561651823-34feb02250e4?auto=format&fit=crop&w=800&q=80",
+            "alt": "Greek chicken pita"
+          },
+          "instructions": [
+            "Warm the pita briefly.",
+            "Fill with lettuce, tomato, cucumber, chicken, and tzatziki."
+          ]
+        }
+      ],
+      "pairing_suggestions": {
+        "general": ["Serve with sparkling water and lemon."],
+        "detailed": [],
+        "summary": "Fresh Mediterranean flavors in a convenient handheld meal."
+      },
+      "author": {
+        "name": "Sophia Al-Mansoor",
+        "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
+        "bio": "Culinary instructor & nutritionist."
+      }
+    },
+    {
+      "id": "avocado-egg-toast",
+      "categories": ["ALL", "BREAKFAST", "QUICK BITE!"],
+      "title": "Avocado & Egg Toast",
+      "subtitle": "Sourdough Toast with Soft Scrambled Egg",
+      "description": "Crispy sourdough topped with creamy avocado, soft scrambled egg, chili flakes, and fresh herbs.",
+      "meta": {
+        "prep_time": "10 MIN",
+        "difficulty": "EASY PREP",
+        "servings": "1 SERVE"
+      },
+      "badges": [],
+      "hero_image": {
+        "url": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Avocado egg toast"
+      },
+      "introduction": [
+        "A more filling take on classic avocado toast with creamy scrambled egg.",
+        "It is quick enough for breakfast but satisfying enough to keep you going."
+      ],
+      "dos_and_donts": {
+        "title": "Toast Tips",
+        "dos": [
+          {
+            "title": "Cook Eggs Gently",
+            "text": "Low heat keeps scrambled eggs soft and creamy."
+          }
+        ],
+        "donts": [
+          {
+            "title": "Overcook the Eggs",
+            "text": "Remove them from heat while they still look slightly glossy."
+          }
+        ]
+      },
+      "ingredients": [
+        "1 thick slice sourdough",
+        "1/2 ripe avocado",
+        "2 eggs",
+        "1 tsp olive oil",
+        "1 tsp lemon juice",
+        "Chili flakes",
+        "Fresh parsley",
+        "Salt and pepper"
+      ],
+      "equipment_needed": ["Toaster", "Small skillet", "Fork"],
+      "nutritional_value": {
+        "serving_note": "Per toast",
+        "disclaimer": "NOTE: NUTRITIONAL VALUES ARE APPROXIMATE.",
+        "calories": "~340",
+        "protein": "~15g",
+        "total_fat": "~22g",
+        "carbohydrates": "~23g"
+      },
+      "instructions_overview": "Toast the bread, mash the avocado, then top with gently scrambled eggs and seasonings.",
+      "steps": [
+        {
+          "step_title": "PREPARE THE TOPPING",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80",
+            "alt": "Avocado and scrambled egg toast"
+          },
+          "instructions": [
+            "Toast the sourdough and mash avocado with lemon juice.",
+            "Scramble eggs gently in olive oil until soft."
+          ]
+        },
+        {
+          "step_title": "ASSEMBLE",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80",
+            "alt": "Finished avocado egg toast"
+          },
+          "instructions": [
+            "Spread avocado over the toast.",
+            "Top with scrambled egg, chili flakes, parsley, salt, and pepper."
+          ]
+        }
+      ],
+      "pairing_suggestions": {
+        "general": ["Drink: Coffee or fresh orange juice."],
+        "detailed": [],
+        "summary": "Creamy, savory, and packed with protein."
+      },
+      "author": {
+        "name": "Isabella Russo",
+        "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+        "bio": "Food writer and home chef."
+      }
+    },
+    {
+      "id": "mediterranean-chickpea-salad",
+      "categories": ["ALL", "VEGAN", "LUNCH", "QUICK BITE!"],
+      "title": "Mediterranean Chickpea Salad",
+      "subtitle": "Fresh Herb & Lemon Chickpea Bowl",
+      "description": "Crisp cucumber, tomatoes, olives, and chickpeas tossed with lemon, oregano, and olive oil.",
+      "meta": {
+        "prep_time": "10 MIN",
+        "difficulty": "EASY PREP",
+        "servings": "2 SERVES"
+      },
+      "badges": ["VEGAN"],
+      "hero_image": {
+        "url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Mediterranean chickpea salad"
+      },
+      "introduction": [
+        "A colorful Mediterranean salad that requires no cooking.",
+        "Fresh vegetables and chickpeas make it light but satisfying."
+      ],
+      "dos_and_donts": {
+        "title": "Salad Tips",
+        "dos": [
+          {
+            "title": "Rinse Chickpeas",
+            "text": "Rinse canned chickpeas thoroughly before adding them."
+          }
+        ],
+        "donts": [
+          {
+            "title": "Dress Too Early",
+            "text": "Add dressing shortly before serving to keep the vegetables crisp."
+          }
+        ]
+      },
+      "ingredients": [
+        "1 can chickpeas, drained",
+        "1 cup cucumber",
+        "1 cup cherry tomatoes",
+        "1/4 cup red onion",
+        "1/4 cup olives",
+        "1 tbsp olive oil",
+        "1 tbsp lemon juice",
+        "1 tsp oregano",
+        "Salt and pepper"
+      ],
+      "equipment_needed": ["Large mixing bowl", "Knife"],
+      "nutritional_value": {
+        "serving_note": "Per bowl",
+        "disclaimer": "NOTE: NUTRITIONAL VALUES ARE APPROXIMATE.",
+        "calories": "~300",
+        "protein": "~11g",
+        "total_fat": "~12g",
+        "carbohydrates": "~38g"
+      },
+      "instructions_overview": "Chop vegetables, combine with chickpeas, and toss with lemon, olive oil, and oregano.",
+      "steps": [
+        {
+          "step_title": "CHOP AND COMBINE",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
+            "alt": "Mediterranean chickpea salad"
+          },
+          "instructions": [
+            "Add chickpeas, cucumber, tomatoes, onion, and olives to a bowl.",
+            "Whisk olive oil, lemon juice, oregano, salt, and pepper."
+          ]
+        },
+        {
+          "step_title": "TOSS AND SERVE",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
+            "alt": "Finished chickpea salad"
+          },
+          "instructions": [
+            "Pour the dressing over the salad.",
+            "Toss well and serve immediately."
+          ]
+        }
+      ],
+      "pairing_suggestions": {
+        "general": ["Serve with warm pita bread."],
+        "detailed": [],
+        "summary": "Fresh, crunchy, and completely plant-based."
+      },
+      "author": {
+        "name": "Marcus Chen",
+        "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
+        "bio": "Plant-based recipe developer."
+      }
+    },
+    {
+      "id": "banana-peanut-butter-bites",
+      "categories": ["ALL", "VEGAN", "DESSERT", "QUICK BITE!"],
+      "title": "Chocolate Banana Bites",
+      "subtitle": "Frozen Banana & Peanut Butter Treats",
+      "description": "Sweet banana slices layered with creamy peanut butter and dark chocolate.",
+      "meta": {
+        "prep_time": "10 MIN",
+        "difficulty": "EASY PREP",
+        "servings": "4 SERVES"
+      },
+      "badges": ["VEGAN"],
+      "hero_image": {
+        "url": "https://images.unsplash.com/photo-1627249519199-9bfa07a0fe11?q=80&w=686&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "alt": "Chocolate banana bites"
+      },
+      "introduction": [
+        "A simple frozen treat made from banana, peanut butter, and dark chocolate.",
+        "Perfect when you want something sweet without baking."
+      ],
+      "dos_and_donts": {
+        "title": "Frozen Bite Tips",
+        "dos": [
+          {
+            "title": "Use Ripe Bananas",
+            "text": "Ripe bananas provide natural sweetness and a creamy texture."
+          }
+        ],
+        "donts": [
+          {
+            "title": "Use Too Much Chocolate",
+            "text": "A thin chocolate coating keeps the bites balanced rather than overly heavy."
+          }
+        ]
+      },
+      "ingredients": [
+        "2 ripe bananas",
+        "3 tbsp peanut butter",
+        "80g dark chocolate",
+        "1 tsp coconut oil"
+      ],
+      "equipment_needed": [
+        "Baking tray",
+        "Parchment paper",
+        "Microwave-safe bowl"
+      ],
+      "nutritional_value": {
+        "serving_note": "Per serving",
+        "disclaimer": "NOTE: NUTRITIONAL VALUES ARE APPROXIMATE.",
+        "calories": "~190",
+        "protein": "~4g",
+        "total_fat": "~10g",
+        "carbohydrates": "~25g"
+      },
+      "instructions_overview": "Slice bananas, sandwich with peanut butter, coat with melted chocolate, and freeze until firm.",
+      "steps": [
+        {
+          "step_title": "ASSEMBLE",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1575377427642-087cf684f04d?auto=format&fit=crop&w=800&q=80",
+            "alt": "Banana peanut butter bites"
+          },
+          "instructions": [
+            "Slice bananas and place a small amount of peanut butter between slices.",
+            "Dip or drizzle with melted dark chocolate."
+          ]
+        },
+        {
+          "step_title": "FREEZE",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1575377427642-087cf684f04d?auto=format&fit=crop&w=800&q=80",
+            "alt": "Frozen chocolate banana bites"
+          },
+          "instructions": [
+            "Place bites on parchment paper.",
+            "Freeze for at least one hour before serving."
+          ]
+        }
+      ],
+      "pairing_suggestions": {
+        "general": ["Drink: Coffee or cold milk."],
+        "detailed": [],
+        "summary": "A sweet, chocolatey snack with no baking required."
+      },
+      "author": {
+        "name": "Sophia Al-Mansoor",
+        "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
+        "bio": "Culinary instructor & nutritionist."
+      }
+    },
+    {
+      "id": "strawberry-cheesecake-bites",
+      "categories": ["ALL", "DESSERT", "QUICK BITE!"],
+      "title": "Strawberry Cheesecake Bites",
+      "subtitle": "Frozen Stuffed Strawberries with Graham Cracker Crunch",
+      "description": "Fresh strawberries stuffed with a sweetened cream cheese filling, dipped in melted chocolate, and sprinkled with crushed graham crackers.",
+      "meta": {
+        "prep_time": "15 MIN",
+        "difficulty": "EASY PREP",
+        "servings": "4 SERVES"
+      },
+      "badges": [],
+      "hero_image": {
+        "url": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Strawberry cheesecake bites"
+      },
+      "introduction": [
+        "A bite-sized, non-baked dessert combining fresh berries and rich cheesecake filling.",
+        "Quick to assemble and perfect for a light, refreshing treat out of the freezer."
+      ],
+      "dos_and_donts": {
+        "title": "Cheesecake Bite Tips",
+        "dos": [
+          {
+            "title": "Dry the Strawberries",
+            "text": "Ensure strawberries are completely dry after washing so the chocolate and filling stick well."
+          }
+        ],
+        "donts": [
+          {
+            "title": "Overfill the Berries",
+            "text": "Fill just flush with the top of the berry so the chocolate coating stays neat."
+          }
+        ]
+      },
+      "ingredients": [
+        "12 large fresh strawberries",
+        "100g cream cheese, softened",
+        "2 tbsp powdered sugar",
+        "1/2 tsp vanilla extract",
+        "80g milk chocolate or dark chocolate",
+        "2 tbsp crushed graham crackers"
+      ],
+      "equipment_needed": [
+        "Paring knife",
+        "Small mixing bowl",
+        "Baking tray",
+        "Parchment paper"
+      ],
+      "nutritional_value": {
+        "serving_note": "Per serving",
+        "disclaimer": "NOTE: NUTRITIONAL VALUES ARE APPROXIMATE.",
+        "calories": "~180",
+        "protein": "~3g",
+        "total_fat": "~11g",
+        "carbohydrates": "~18g"
+      },
+      "instructions_overview": "Hollow out strawberries, whip cream cheese filling, stuff berries, dip in melted chocolate, sprinkle with crushed crackers, and chill.",
+      "steps": [
+        {
+          "step_title": "PREPARE AND FILL",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=800&q=80",
+            "alt": "Stuffed strawberries with cream cheese filling"
+          },
+          "instructions": [
+            "Hollow out the center of each strawberry using a paring knife.",
+            "In a small bowl, beat cream cheese, powdered sugar, and vanilla until smooth.",
+            "Spoon or pipe the filling into each strawberry."
+          ]
+        },
+        {
+          "step_title": "COAT AND CHILL",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=800&q=80",
+            "alt": "Chocolate coated strawberry cheesecake bites"
+          },
+          "instructions": [
+            "Dip the bottoms or drizzle the tops with melted chocolate.",
+            "Sprinkle immediately with crushed graham crackers.",
+            "Place on parchment paper and freeze for 30–45 minutes before serving."
+          ]
+        }
+      ],
+      "pairing_suggestions": {
+        "general": ["Drink: Cold milk, iced coffee, or dessert wine."],
+        "detailed": [],
+        "summary": "A creamy, fruity, bite-sized indulgence with zero baking required."
+      },
+      "author": {
+        "name": "Sophia Al-Mansoor",
+        "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
+        "bio": "Culinary instructor & nutritionist."
+      }
+    },
+    {
+      "id": "salmon-avocado-rice-bowl",
+      "categories": ["ALL", "LUNCH", "DINNER"],
+      "title": "Salmon & Avocado Rice Bowl",
+      "subtitle": "Roasted Salmon with Rice, Avocado & Cucumber",
+      "description": "Flaky roasted salmon served over rice with creamy avocado, cucumber, sesame, and lemon.",
+      "meta": {
+        "prep_time": "25 MIN",
+        "difficulty": "EASY PREP",
+        "servings": "2 SERVES"
+      },
+      "badges": [],
+      "hero_image": {
+        "url": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Salmon avocado rice bowl"
+      },
+      "introduction": [
+        "A colorful bowl combining tender salmon with fresh vegetables and fluffy rice.",
+        "A balanced option for lunch or dinner when you want something nourishing but substantial."
+      ],
+      "dos_and_donts": {
+        "title": "Salmon Tips",
+        "dos": [
+          {
+            "title": "Check the Center",
+            "text": "Cook salmon until the center flakes easily and reaches a safe internal temperature."
+          }
+        ],
+        "donts": [
+          {
+            "title": "Overcook the Salmon",
+            "text": "Avoid leaving salmon in the oven longer than necessary so it stays moist."
+          }
+        ]
+      },
+      "ingredients": [
+        "2 salmon fillets",
+        "2 cups cooked rice",
+        "1 avocado",
+        "1/2 cucumber",
+        "1 tsp sesame seeds",
+        "1 lemon",
+        "1 tbsp olive oil",
+        "Salt and pepper"
+      ],
+      "equipment_needed": ["Baking tray", "Rice cooker or saucepan"],
+      "nutritional_value": {
+        "serving_note": "Per bowl",
+        "disclaimer": "NOTE: NUTRITIONAL VALUES ARE APPROXIMATE.",
+        "calories": "~520",
+        "protein": "~34g",
+        "total_fat": "~23g",
+        "carbohydrates": "~43g"
+      },
+      "instructions_overview": "Roast seasoned salmon, prepare rice and vegetables, then assemble everything into a bowl.",
+      "steps": [
+        {
+          "step_title": "ROAST THE SALMON",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80",
+            "alt": "Roasted salmon fillet"
+          },
+          "instructions": [
+            "Season salmon with olive oil, lemon, salt, and pepper.",
+            "Roast until flaky and fully cooked."
+          ]
+        },
+        {
+          "step_title": "ASSEMBLE THE BOWL",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80",
+            "alt": "Salmon rice bowl"
+          },
+          "instructions": [
+            "Add rice to bowls.",
+            "Top with salmon, avocado, cucumber, sesame seeds, and lemon."
+          ]
+        }
+      ],
+      "pairing_suggestions": {
+        "general": ["Drink: Sparkling water with lemon."],
+        "detailed": [],
+        "summary": "Fresh, colorful, and packed with satisfying protein."
+      },
+      "author": {
+        "name": "Isabella Russo",
+        "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+        "bio": "Food writer and home chef."
+      }
+    }
+  ]
+}

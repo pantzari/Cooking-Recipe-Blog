@@ -11,7 +11,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,6 +25,9 @@
 
     <!-- Custom JavaScript -->
     <script src="./js/main.js" defer></script>
+
+    <script src="./js/recipes.js" defer></script>
+    <script src="./js/feat-recipes.js" defer></script>
   </head>
 
   <body>
@@ -250,6 +253,60 @@
           <div class="abt-bottom-img">
             <img src="./img/abt-bottom-img.png" alt="Food cooking in pan" />
           </div>
+        </div>
+      </div>
+    </section>
+    <section class="featured-recipes-section">
+      <div class="wrapper">
+        <!-- Inner container to hold the border and constrain width -->
+        <div class="featured-card">
+          <div class="featured-header">
+            <h2>FEATURED RECIPES</h2>
+
+            <!-- Standard Swiper Navigation Buttons -->
+            <div class="swiper-navigation">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+
+          <!-- Standard Swiper Container -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <!-- JS dynamically injects slides here -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="tabs">
+      <div class="wrapper">
+        <span class="header-badge">Recipes</span>
+        <h1>Embark on a<br />Journey</h1>
+        <p class="subtitle">
+          With our diverse collection of recipes we have something to satisfy
+          every palate.
+        </p>
+
+        <!-- Category Tabs -->
+        <div class="tabs-container">
+          <button class="tab-btn active" data-category="ALL">ALL</button>
+          <button class="tab-btn" data-category="VEGAN">VEGAN</button>
+          <button class="tab-btn" data-category="BREAKFAST">BREAKFAST</button>
+          <button class="tab-btn" data-category="LUNCH">LUNCH</button>
+          <button class="tab-btn" data-category="DINNER">DINNER</button>
+          <button class="tab-btn" data-category="DESSERT">DESSERT</button>
+          <button class="tab-btn" data-category="QUICK BITE!">
+            QUICK BITE!
+          </button>
+        </div>
+
+        <!-- Cards Container -->
+        <div class="recipes-grid" id="recipes-grid"></div>
+
+        <!-- See More Button -->
+        <div id="see-more-container" class="see-more-container">
+          <button id="see-more-btn" class="see-more-btn">SEE MORE</button>
         </div>
       </div>
     </section>

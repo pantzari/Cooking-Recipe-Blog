@@ -31,9 +31,11 @@
         z-index: 2;
         transform: translate(-50%, -50%);
         text-align: center;
+
         @include v.view(tablet) {
           padding-inline: 16px;
         }
+
         h1,
         p {
           color: v.$bg-color;
@@ -74,7 +76,7 @@
             background-color 0.2s ease,
             transform 0.2s ease;
 
-          // glowing light  behind
+          // glowing light behind
           &::before {
             content: "";
             position: absolute;
@@ -124,25 +126,31 @@
       background-color: #c4e5fc;
       min-height: 500px;
       padding: 40px;
+
       @include v.view(tablet) {
         flex-direction: column;
         padding: 24px;
       }
+
       .left-column {
         display: flex;
         flex-direction: column;
         justify-content: end;
+
         @include v.view(tablet) {
           margin-bottom: 60px;
         }
+
         h2 {
           font-size: clamp(26px, 2vw, 40px);
           width: 50%;
           color: v.$text-dark;
+
           @include v.view(tablet) {
             width: 90%;
           }
         }
+
         p {
           font-size: clamp(14px, 5vw, 16px);
           font-family: "Roboto", sans-serif;
@@ -150,19 +158,23 @@
           color: v.$text-dark;
           padding-top: 12px;
           padding-bottom: 40px;
+
           @include v.view(tablet) {
             width: 100%;
           }
         }
+
         button {
           width: 100px;
         }
       }
+
       .right-column {
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 16px;
+
         .choice-wrap {
           min-width: 400px;
           display: flex;
@@ -170,6 +182,7 @@
           padding: 16px;
           border-bottom: 2px solid #1e1e234b;
           padding-bottom: 14px;
+
           @include v.view(tablet) {
             align-items: center;
             justify-content: flex-start;
@@ -178,6 +191,7 @@
             padding-right: 0;
             padding-left: 0;
           }
+
           span {
             text-transform: uppercase;
             color: v.$text-dark;
@@ -193,9 +207,11 @@
     }
   }
 }
+
 #about-us-card {
   width: 100%;
   margin-top: clamp(14px, 5vw, 64px);
+
   .about-us-grid {
     background-color: #f4f1ea;
     border-radius: 32px;
@@ -212,6 +228,7 @@
       display: flex;
       flex-direction: column;
       padding: 8px;
+
       .abt-content {
         width: 100%;
         padding-right: 0;
@@ -225,6 +242,7 @@
         height: 100%;
         aspect-ratio: 16/9;
       }
+
       img {
         width: 100%;
         height: 100%;
@@ -242,11 +260,13 @@
       justify-content: flex-end;
       align-items: flex-start;
       padding-right: 24px;
+
       @include v.view(tablet) {
         padding-block: 16px;
         justify-content: center;
         margin-left: 16px;
       }
+
       .badge {
         background-color: #e86d5a;
         color: white;
@@ -316,8 +336,311 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-
         display: block;
+      }
+    }
+  }
+}
+
+/* Reusable Recipe Card Styles (Shared by #tabs grid and .mySwiper slider) */
+.recipe-card {
+  background-color: #fcfbf9;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  position: relative;
+  height: 100%;
+
+  .image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 210px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .vegan-badge {
+      display: none;
+      position: absolute;
+      bottom: -15px;
+      right: 15px;
+      width: 50px;
+      height: 50px;
+      background-color: #a1e228;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      font-size: 8px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #1a1a1a;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      text-align: center;
+      z-index: 2;
+    }
+  }
+
+  &[data-is-vegan="true"] {
+    .vegan-badge {
+      display: flex;
+    }
+  }
+
+  .card-body {
+    padding: 24px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    .card-title {
+      font-size: 18px;
+      font-weight: 800;
+      margin: 0 0 10px 0;
+      color: #1a1a1a;
+    }
+
+    .card-description {
+      font-size: 13px;
+      color: #66635d;
+      line-height: 1.4;
+      margin: 0 0 24px 0;
+      flex-grow: 1;
+    }
+
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: auto;
+
+      .meta-info {
+        font-size: 10px;
+        font-weight: 800;
+        color: #55534e;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      .view-btn {
+        background-color: transparent;
+        border: 1px solid #72706a;
+        border-radius: 20px;
+        padding: 6px 14px;
+        font-size: 10px;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: #2b2b2b;
+        text-decoration: none;
+        transition:
+          background-color 0.2s ease,
+          color 0.2s ease;
+
+        &:hover {
+          background-color: #2b2b2b;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+#tabs {
+  margin-top: 80px;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .header-badge {
+    background-color: #ef6453;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 14px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+  }
+
+  h1 {
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0 0 12px 0;
+    text-align: center;
+    line-height: 1.1;
+  }
+
+  .subtitle {
+    color: #72706a;
+    font-size: 14px;
+    max-width: 420px;
+    text-align: center;
+    margin: 0 0 32px 0;
+    line-height: 1.4;
+  }
+
+  .tabs-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+
+    .tab-btn {
+      background-color: #e5e1d8;
+      color: #55534e;
+      border: 1px solid #b8b3a8;
+      border-radius: 25px;
+      padding: 8px 18px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      transition:
+        border-color 0.2s ease,
+        background-color 0.2s ease;
+
+      &:hover {
+        border-color: #8c877d;
+      }
+
+      &.active {
+        background-color: #a1e228;
+        color: #1a1a1a;
+        border-color: #a1e228;
+      }
+    }
+  }
+
+  .recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+    width: 100%;
+    // max-width: 1080px;
+
+    @include v.view(tablet) {
+      /* Hide every recipe card after the 4th item unless grid is expanded */
+      &:not(.expanded) .recipe-card:nth-child(n + 5) {
+        display: none;
+      }
+
+      /* Show button container only when grid has more than 4 items */
+      &.has-more + .see-more-container {
+        display: flex;
+      }
+    }
+  }
+
+  .see-more-container {
+    display: none;
+    justify-content: center;
+    margin-top: 32px;
+    width: 100%;
+
+    .see-more-btn {
+      background-color: #ef6453;
+      color: #ffffff;
+      border: none;
+      border-radius: 25px;
+      padding: 12px 32px;
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      transition:
+        background-color 0.2s ease,
+        transform 0.1s ease;
+
+      &:hover {
+        background-color: #eb432f;
+      }
+
+      &:active {
+        transform: scale(0.97);
+      }
+    }
+  }
+}
+
+.swiper.mySwiper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  height: auto;
+  box-sizing: border-box; /* Ensure padding/borders don't expand slide width */
+}
+
+/* Force recipe card inside swiper slide to fit properly */
+.swiper-slide .recipe-card {
+  width: 100%;
+}
+
+.featured-recipes-section {
+  width: 100%;
+
+  .wrapper {
+    .featured-card {
+      max-width: 100%;
+      margin-inline: auto;
+      padding: clamp(20px, 4vw, 40px);
+
+      border: 3px solid #bbb6ab;
+      border-radius: 24px;
+
+      box-sizing: border-box;
+      .featured-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .swiper-navigation {
+          display: flex;
+          flex-direction: row; /* Aligns arrows side by side */
+          align-items: center;
+          gap: 12px; /* Space between the two arrows */
+
+          .swiper-button-prev,
+          .swiper-button-next {
+            position: static; /* Overrides Swiper's default absolute positioning */
+            top: auto;
+            left: auto;
+            right: auto;
+            bottom: auto;
+            margin: 0;
+
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #282522;
+            color: #ffffff;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+            &::after {
+              font-size: 16px;
+              font-weight: bold;
+            }
+          }
+        }
       }
     }
   }
