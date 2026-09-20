@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             <p class="card-description">${description}</p>
             <div class="card-footer">
               <span class="meta-info">${[time, difficulty, serves].filter(Boolean).join(" - ")}</span>
-              <a href="/recipe-detail.html?id=${recipeId}" class="view-btn">VIEW RECIPE</a>
+             <a href="./recipe-details.html?id=${recipeId}" class="view-btn">VIEW RECIPE</a>
             </div>
           </div>
         </div>

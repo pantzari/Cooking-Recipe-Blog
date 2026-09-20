@@ -10,8 +10,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     swiperWrapper.innerHTML = "";
 
-    recipes.forEach((recipe) => {
+    // Added index so every recipe has an ID fallback
+    recipes.forEach((recipe, index) => {
       const isVegan = recipe.badges && recipe.badges.includes("VEGAN");
+      const recipeId = recipe.id !== undefined ? recipe.id : (recipe._id !== undefined ? recipe._id : index + 1);
 
       const slide = document.createElement("div");
       slide.classList.add("swiper-slide");
@@ -28,7 +30,8 @@ document.addEventListener("DOMContentLoaded", async () => {
             <p class="card-description">${recipe.description}</p>
             <div class="card-footer">
               <span class="meta-info">${recipe.meta.prep_time} - ${recipe.meta.difficulty} - ${recipe.meta.servings}</span>
-              <a href="#" class="view-btn">VIEW RECIPE</a>
+              <!-- NOW LEADS TO RECIPE-DETAILS WITH THE ID -->
+              <a href="./recipe-details.html?id=${recipeId}" class="view-btn">VIEW RECIPE</a>
             </div>
           </div>
         </div>
