@@ -19,8 +19,8 @@
   },
   "scripts": {
     "build-task:mycompile": "sass src/sass:css -s expanded",
-    "build-task:prefix": "postcss css/**/*.css --base --use=autoprefixer --map=false --dir css",
-    "build-task:min": "postcss css/**/*[!min].css --base --use=cssnano --map=false --dir css --ext .min.css",
+    "build-task:prefix": "postcss css/about-us.css css/index.css css/recipe-details.css --use=autoprefixer --no-map --replace",
+    "build-task:min": "postcss css/about-us.css css/index.css css/recipe-details.css --use=cssnano --no-map --dir css --ext .min.css",
     "dev": "onchange \"src/sass\" -- run-s build-task:*"
   },
   "browserslist": [

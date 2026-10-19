@@ -1,122 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cooks Delight - Recipe Details</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cooks Delight - Recipe Details</title>
 
-  <!-- Swiper CSS -->
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
-  />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
-    rel="stylesheet"
-  />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="./css/index.min.css" />
-  <link rel="stylesheet" href="./css/recipe-details.min.css" />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/index.min.css" />
+    <link rel="stylesheet" href="./css/recipe-details.min.css" />
 
-  <!-- JavaScript Modules -->
-  <script src="./js/main.js" defer></script>
-  <script src="./js/feat-recipes.js" defer></script>
-  <script src="./js/app.js" defer></script>
-</head>
-<body>
+    <!-- JavaScript Modules -->
+    <script src="./js/main.js" defer></script>
+    <script src="./js/feat-recipes.js" defer></script>
+    <script src="./js/app.js" defer></script>
+  </head>
+  <body>
+    <!-- ================= HEADER / NAVBAR (FROM INDEX.HTML) ================= -->
+    <header>
+      <a href="./index.html" class="logo-wrap">
+        <img src="./img/svgs/logo.svg" alt="Cooks Delight logo" />
+        <span class="brand">Cooks<br />Delight</span>
+      </a>
 
-  <!-- ================= HEADER / NAVBAR (FROM INDEX.HTML) ================= -->
-  <header>
-    <a href="./index.html" class="logo-wrap">
-      <img src="./img/svgs/logo.svg" alt="Cooks Delight logo" />
-      <span class="brand">Cooks<br />Delight</span>
-    </a>
-
-    <nav class="nav">
-      <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./index.html#tabs" class="active">Recipes</a></li>
-       
-        <li><a href="./index.html#about-us-card">About Us</a></li>
-      </ul>
-    </nav>
-
-    <div class="actions">
-      <button class="search-btn" aria-label="Search">
-        <svg
-          width="18"
-          height="18"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <circle cx="11" cy="11" r="8"></circle>
-          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-        </svg>
-      </button>
-      <a href="#subscribe" class="subscribe-btn">Subscribe</a>
-    </div>
-
-    <!-- MOBILE MENU BURGER -->
-    <div class="burger-menu">
-      <button class="burger" id="openMenu" aria-label="Open menu">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="34"
-          height="34"
-          viewBox="0 0 34 34"
-        >
-          <circle cx="17" cy="17" r="17" fill="#CDC7C0" />
-          <g stroke="#282522" stroke-width="2.5" stroke-linecap="round">
-            <line x1="10" y1="11.5" x2="24" y2="11.5" />
-            <line x1="10" y1="17" x2="24" y2="17" />
-            <line x1="10" y1="22.5" x2="24" y2="22.5" />
-          </g>
-        </svg>
-      </button>
-    </div>
-  </header>
-
-  <!-- ================= MOBILE MENU OVERLAY ================= -->
-  <div class="mobile-menu-overlay" id="mobileMenu">
-    <div class="mobile-menu-card">
-      <div class="mobile-menu-header">
-        <a href="./index.html" class="logo-wrap">
-          <img src="./img/svgs/logo.svg" alt="Cooks Delight logo" />
-          <span class="brand">Cooks<br />Delight</span>
-        </a>
-        <button class="close-btn" id="closeMenu" aria-label="Close menu">
-          <svg width="44" height="44" viewBox="0 0 44 44">
-            <circle cx="22" cy="22" r="22" fill="#423E3B" />
-            <path
-              d="M15 15L29 29M29 15L15 29"
-              stroke="#F29C33"
-              stroke-width="2"
-              stroke-linecap="round"
-            />
-          </svg>
-        </button>
-      </div>
-
-      <nav class="mobile-nav">
+      <nav class="nav">
         <ul>
-          <li><a href="./index.html">HOME</a></li>
-          <li><a href="./index.html#tabs">RECIPES</a></li>
-       
-          <li><a href="./index.html#about-us-card">ABOUT US</a></li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./index.html#tabs" class="active">Recipes</a></li>
+
+          <li><a href="./index.html#about-us-card">About Us</a></li>
         </ul>
       </nav>
 
-      <div class="mobile-actions">
+      <div class="actions">
         <button class="search-btn" aria-label="Search">
           <svg
             width="18"
@@ -132,279 +62,407 @@
             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
           </svg>
         </button>
-        <a href="#subscribe" class="subscribe-btn">SUBSCRIBE</a>
+        <a href="#subscribe" class="subscribe-btn">Subscribe</a>
       </div>
 
-      <div class="mobile-socials">
-        <a href="#" aria-label="Facebook">
-          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-            <path
-              d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H7.5v-3H10V9.5C10 7.01 11.49 5.6 13.78 5.6c1.1 0 2.25.2 2.25.2v2.47h-1.27c-1.24 0-1.62.77-1.62 1.56V12h2.78l-.44 3h-2.34v6.8c4.56-.93 8-4.96 8-9.8z"
-            />
+      <!-- MOBILE MENU BURGER -->
+      <div class="burger-menu">
+        <button class="burger" id="openMenu" aria-label="Open menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="34"
+            height="34"
+            viewBox="0 0 34 34"
+          >
+            <circle cx="17" cy="17" r="17" fill="#CDC7C0" />
+            <g stroke="#282522" stroke-width="2.5" stroke-linecap="round">
+              <line x1="10" y1="11.5" x2="24" y2="11.5" />
+              <line x1="10" y1="17" x2="24" y2="17" />
+              <line x1="10" y1="22.5" x2="24" y2="22.5" />
+            </g>
           </svg>
-        </a>
-        <a href="#" aria-label="Instagram">
-          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-            <path
-              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
-            />
-          </svg>
-        </a>
-        <a href="#" aria-label="YouTube">
-          <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
-            <path
-              d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
-            />
-          </svg>
-        </a>
+        </button>
+      </div>
+    </header>
+
+    <!-- ================= MOBILE MENU OVERLAY ================= -->
+    <div class="mobile-menu-overlay" id="mobileMenu">
+      <div class="mobile-menu-card">
+        <div class="mobile-menu-header">
+          <a href="./index.html" class="logo-wrap">
+            <img src="./img/svgs/logo.svg" alt="Cooks Delight logo" />
+            <span class="brand">Cooks<br />Delight</span>
+          </a>
+          <button class="close-btn" id="closeMenu" aria-label="Close menu">
+            <svg width="44" height="44" viewBox="0 0 44 44">
+              <circle cx="22" cy="22" r="22" fill="#423E3B" />
+              <path
+                d="M15 15L29 29M29 15L15 29"
+                stroke="#F29C33"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <nav class="mobile-nav">
+          <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./index.html#tabs">RECIPES</a></li>
+
+            <li><a href="./index.html#about-us-card">ABOUT US</a></li>
+          </ul>
+        </nav>
+
+        <div class="mobile-actions">
+          <button class="search-btn" aria-label="Search">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+          <a href="#subscribe" class="subscribe-btn">SUBSCRIBE</a>
+        </div>
+
+        <div class="mobile-socials">
+          <a href="#" aria-label="Facebook">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H7.5v-3H10V9.5C10 7.01 11.49 5.6 13.78 5.6c1.1 0 2.25.2 2.25.2v2.47h-1.27c-1.24 0-1.62.77-1.62 1.56V12h2.78l-.44 3h-2.34v6.8c4.56-.93 8-4.96 8-9.8z"
+              />
+            </svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+              />
+            </svg>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+              />
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- ================= MAIN RECIPE DETAILS ================= -->
-  <main class="container">
+    <!-- ================= MAIN RECIPE DETAILS ================= -->
+    <main class="container">
+      <!-- Recipe Hero Section -->
+      <section class="recipe-hero">
+        <div class="category-badge-list" id="recipeBadges">
+          <!-- Injected dynamically via app.js -->
+        </div>
 
-    <!-- Recipe Hero Section -->
-    <section class="recipe-hero">
-      <div class="category-badge-list" id="recipeBadges">
-        <!-- Injected dynamically via app.js -->
+        <h1 class="recipe-title" id="recipeTitle">Loading Recipe...</h1>
+        <p class="recipe-subtitle" id="recipeSubtitle"></p>
+
+        <!-- Meta Info Bar -->
+        <div class="recipe-meta-bar">
+          <div class="meta-item">
+            <svg
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            <span id="metaPrepTime">-- MIN</span>
+          </div>
+          <div class="meta-item">
+            <svg
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+              ></path>
+            </svg>
+            <span id="metaDifficulty">EASY PREP</span>
+          </div>
+          <div class="meta-item">
+            <svg
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M18 21a8 8 0 0 0-16 0"></path>
+              <circle cx="10" cy="8" r="5"></circle>
+              <path d="M22 20c0-3.37-2-6.5-5-8"></path>
+            </svg>
+            <span id="metaServings">1 SERVE</span>
+          </div>
+        </div>
+
+        <!-- Hero Image -->
+        <div class="hero-image-wrapper">
+          <img id="heroImage" src="" alt="Recipe Image" />
+        </div>
+      </section>
+
+      <!-- Two-column Recipe Layout -->
+      <div class="recipe-layout">
+        <!-- Left Column: Story, Tips, Dynamic Steps, Author -->
+        <article class="recipe-content-main">
+          <!-- Introduction Story -->
+          <section class="section-intro" id="recipeIntro">
+            <!-- Injected dynamically via app.js -->
+          </section>
+
+          <!-- Cooking Guide: Dos & Don'ts -->
+          <section class="section-guide" id="recipeGuide">
+            <!-- Injected dynamically via app.js -->
+          </section>
+
+          <!-- Instructions & Steps Section -->
+          <section class="section-instructions">
+            <h2 class="section-title">INSTRUCTIONS</h2>
+            <p class="instructions-overview" id="instructionsOverview"></p>
+
+            <!-- DYNAMIC STEP CARDS CONTAINER -->
+            <div class="steps-container" id="stepsContainer">
+              <!-- Step cards injected dynamically via app.js -->
+            </div>
+
+            <!-- Pairing Suggestions -->
+            <div class="pairing-container" id="pairingContainer">
+              <!-- Injected dynamically via app.js -->
+            </div>
+          </section>
+
+          <!-- Social Share & Tags Bar -->
+          <div class="recipe-tags-share">
+            <div class="recipe-tags" id="recipeTags">
+              <!-- Tags injected dynamically via app.js -->
+            </div>
+            <div class="share-buttons">
+              <button
+                class="share-btn"
+                onclick="window.print()"
+                title="Print Recipe"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  width="18"
+                  height="18"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                  <path
+                    d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"
+                  ></path>
+                  <rect x="6" y="14" width="12" height="8"></rect>
+                </svg>
+              </button>
+              <button
+                class="share-btn"
+                title="Share"
+                onclick="
+                  navigator.clipboard?.writeText(window.location.href);
+                  alert('Recipe link copied to clipboard!');
+                "
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  width="18"
+                  height="18"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <circle cx="18" cy="5" r="3"></circle>
+                  <circle cx="6" cy="12" r="3"></circle>
+                  <circle cx="18" cy="19" r="3"></circle>
+                  <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                  <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Author Card -->
+          <section class="author-card" id="authorCard">
+            <img
+              id="authorAvatar"
+              src=""
+              alt="Author avatar"
+              class="author-avatar"
+            />
+            <div class="author-details">
+              <h3 id="authorName">Author Name</h3>
+              <p id="authorBio">Culinary enthusiast and recipe creator.</p>
+              <a href="./index.html#tabs" class="btn btn-outline btn-sm"
+                >VIEW RECIPES</a
+              >
+            </div>
+          </section>
+        </article>
+
+        <!-- Right Column: Sidebar (Ingredients, Equipment, Nutrition) -->
+        <aside class="recipe-sidebar">
+          <!-- Ingredients Card -->
+          <div class="sidebar-card">
+            <h3 class="sidebar-card-title">INGREDIENTS</h3>
+            <ul class="ingredient-list" id="ingredientsList">
+              <!-- Injected dynamically via app.js -->
+            </ul>
+          </div>
+
+          <!-- Equipment Card -->
+          <div class="sidebar-card">
+            <h3 class="sidebar-card-title">EQUIPMENT YOU MIGHT NEED</h3>
+            <ul class="equipment-list" id="equipmentList">
+              <!-- Injected dynamically via app.js -->
+            </ul>
+          </div>
+
+          <!-- Nutritional Value Card -->
+          <div class="sidebar-card nutrition-card">
+            <h3 class="sidebar-card-title">NUTRITIONAL VALUE</h3>
+            <p class="nutrition-serving" id="nutritionServing"></p>
+            <div class="nutrition-rows">
+              <div class="nutrition-row">
+                <span>Calories</span>
+                <strong id="nutriCalories">--</strong>
+              </div>
+              <div class="nutrition-row">
+                <span>Protein</span>
+                <strong id="nutriProtein">--</strong>
+              </div>
+              <div class="nutrition-row">
+                <span>Total Fat</span>
+                <strong id="nutriFat">--</strong>
+              </div>
+              <div class="nutrition-row">
+                <span>Carbohydrates</span>
+                <strong id="nutriCarbs">--</strong>
+              </div>
+            </div>
+            <p class="nutrition-disclaimer" id="nutritionDisclaimer">
+              NOTE: NUTRITIONAL VALUES ARE APPROXIMATE.
+            </p>
+          </div>
+        </aside>
       </div>
+    </main>
 
-      <h1 class="recipe-title" id="recipeTitle">Loading Recipe...</h1>
-      <p class="recipe-subtitle" id="recipeSubtitle"></p>
+    <!-- ================= FEATURED RECIPES SWIPER (FROM INDEX.HTML) ================= -->
+    <section class="featured-recipes-section">
+      <div class="wrapper">
+        <div class="featured-card">
+          <div class="featured-header">
+            <h2>FEATURED RECIPES</h2>
 
-      <!-- Meta Info Bar -->
-      <div class="recipe-meta-bar">
-        <div class="meta-item">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="10"></circle>
-            <polyline points="12 6 12 12 16 14"></polyline>
-          </svg>
-          <span id="metaPrepTime">-- MIN</span>
-        </div>
-        <div class="meta-item">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-          </svg>
-          <span id="metaDifficulty">EASY PREP</span>
-        </div>
-        <div class="meta-item">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M18 21a8 8 0 0 0-16 0"></path>
-            <circle cx="10" cy="8" r="5"></circle>
-            <path d="M22 20c0-3.37-2-6.5-5-8"></path>
-          </svg>
-          <span id="metaServings">1 SERVE</span>
-        </div>
-      </div>
+            <div class="swiper-navigation">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
 
-      <!-- Hero Image -->
-      <div class="hero-image-wrapper">
-        <img id="heroImage" src="" alt="Recipe Image" />
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <!-- Slides injected dynamically by feat-recipes.js -->
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Two-column Recipe Layout -->
-    <div class="recipe-layout">
+    <!-- ================= FOOTER & NEWSLETTER (FROM INDEX.HTML) ================= -->
+    <footer id="subscribe">
+      <div class="wrapper">
+        <section class="newsletter">
+          <span class="subtitle">SUBSCRIBE</span>
+          <h2>JOIN THE FUN<br />SUBSCRIBE NOW!</h2>
+          <p>
+            Subscribe to our newsletter for a weekly serving of recipes, cooking
+            tips, and exclusive insights straight to your inbox.
+          </p>
 
-      <!-- Left Column: Story, Tips, Dynamic Steps, Author -->
-      <article class="recipe-content-main">
-
-        <!-- Introduction Story -->
-        <section class="section-intro" id="recipeIntro">
-          <!-- Injected dynamically via app.js -->
+          <form
+            class="newsletter-form"
+            onsubmit="
+              event.preventDefault();
+              alert('Subscribed successfully!');
+            "
+          >
+            <input type="email" placeholder="Email Address" required />
+            <button type="submit">SUBSCRIBE</button>
+          </form>
         </section>
 
-        <!-- Cooking Guide: Dos & Don'ts -->
-        <section class="section-guide" id="recipeGuide">
-          <!-- Injected dynamically via app.js -->
-        </section>
+        <section class="footer-container">
+          <div class="top-footer">
+            <div class="footer-logo-wrap">
+              <img
+                src="./img/svgs/grey-logo.svg"
+                alt="Cooks Delight grey logo"
+              />
+              <span class="brand">Cooks<br />Delight</span>
+            </div>
 
-        <!-- Instructions & Steps Section -->
-        <section class="section-instructions">
-          <h2 class="section-title">INSTRUCTIONS</h2>
-          <p class="instructions-overview" id="instructionsOverview"></p>
+            <nav class="footer-nav">
+              <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./index.html#tabs">RECIPES</a></li>
 
-          <!-- DYNAMIC STEP CARDS CONTAINER -->
-          <div class="steps-container" id="stepsContainer">
-            <!-- Step cards injected dynamically via app.js -->
+                <li><a href="./index.html#about-us-card">ABOUT US</a></li>
+              </ul>
+            </nav>
+
+            <div class="footer-socials">
+              <a href="#" aria-label="tiktok">
+                <img src="./img/svgs/socials/tiktok.svg" alt="tiktok icon" />
+              </a>
+              <a href="#" aria-label="fb">
+                <img src="./img/svgs/socials/fb.svg" alt="facebook icon" />
+              </a>
+              <a href="#" aria-label="insta">
+                <img
+                  src="./img/svgs/socials/instagram.svg"
+                  alt="instagram icon"
+                />
+              </a>
+              <a href="#" aria-label="yt">
+                <img src="./img/svgs/socials/youtube.svg" alt="youtube icon" />
+              </a>
+            </div>
           </div>
 
-          <!-- Pairing Suggestions -->
-          <div class="pairing-container" id="pairingContainer">
-            <!-- Injected dynamically via app.js -->
-          </div>
-        </section>
+          <hr class="footer-divider" />
 
-        <!-- Social Share & Tags Bar -->
-        <div class="recipe-tags-share">
-          <div class="recipe-tags" id="recipeTags">
-            <!-- Tags injected dynamically via app.js -->
-          </div>
-          <div class="share-buttons">
-            <button class="share-btn" onclick="window.print()" title="Print Recipe">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
-                <polyline points="6 9 6 2 18 2 18 9"></polyline>
-                <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
-                <rect x="6" y="14" width="12" height="8"></rect>
-              </svg>
-            </button>
-            <button class="share-btn" title="Share" onclick="navigator.clipboard?.writeText(window.location.href); alert('Recipe link copied to clipboard!');">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="18" cy="5" r="3"></circle>
-                <circle cx="6" cy="12" r="3"></circle>
-                <circle cx="18" cy="19" r="3"></circle>
-                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
-                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
-              </svg>
-            </button>
-          </div>
-        </div>
-
-        <!-- Author Card -->
-        <section class="author-card" id="authorCard">
-          <img id="authorAvatar" src="" alt="Author avatar" class="author-avatar" />
-          <div class="author-details">
-            <h3 id="authorName">Author Name</h3>
-            <p id="authorBio">Culinary enthusiast and recipe creator.</p>
-            <a href="./index.html#tabs" class="btn btn-outline btn-sm">VIEW RECIPES</a>
+          <div class="footer-bottom">
+            <p>COPYRIGHT: &copy; 2026 COOKS DELIGHT. fan site</p>
           </div>
         </section>
-
-      </article>
-
-      <!-- Right Column: Sidebar (Ingredients, Equipment, Nutrition) -->
-      <aside class="recipe-sidebar">
-
-        <!-- Ingredients Card -->
-        <div class="sidebar-card">
-          <h3 class="sidebar-card-title">INGREDIENTS</h3>
-          <ul class="ingredient-list" id="ingredientsList">
-            <!-- Injected dynamically via app.js -->
-          </ul>
-        </div>
-
-        <!-- Equipment Card -->
-        <div class="sidebar-card">
-          <h3 class="sidebar-card-title">EQUIPMENT YOU MIGHT NEED</h3>
-          <ul class="equipment-list" id="equipmentList">
-            <!-- Injected dynamically via app.js -->
-          </ul>
-        </div>
-
-        <!-- Nutritional Value Card -->
-        <div class="sidebar-card nutrition-card">
-          <h3 class="sidebar-card-title">NUTRITIONAL VALUE</h3>
-          <p class="nutrition-serving" id="nutritionServing"></p>
-          <div class="nutrition-rows">
-            <div class="nutrition-row">
-              <span>Calories</span>
-              <strong id="nutriCalories">--</strong>
-            </div>
-            <div class="nutrition-row">
-              <span>Protein</span>
-              <strong id="nutriProtein">--</strong>
-            </div>
-            <div class="nutrition-row">
-              <span>Total Fat</span>
-              <strong id="nutriFat">--</strong>
-            </div>
-            <div class="nutrition-row">
-              <span>Carbohydrates</span>
-              <strong id="nutriCarbs">--</strong>
-            </div>
-          </div>
-          <p class="nutrition-disclaimer" id="nutritionDisclaimer">NOTE: NUTRITIONAL VALUES ARE APPROXIMATE.</p>
-        </div>
-
-      </aside>
-
-    </div>
-
-  </main>
-
-  <!-- ================= FEATURED RECIPES SWIPER (FROM INDEX.HTML) ================= -->
-  <section class="featured-recipes-section">
-    <div class="wrapper">
-      <div class="featured-card">
-        <div class="featured-header">
-          <h2>FEATURED RECIPES</h2>
-
-          <div class="swiper-navigation">
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          </div>
-        </div>
-
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <!-- Slides injected dynamically by feat-recipes.js -->
-          </div>
-        </div>
       </div>
-    </div>
-  </section>
-
-  <!-- ================= FOOTER & NEWSLETTER (FROM INDEX.HTML) ================= -->
-  <footer id="subscribe">
-    <div class="wrapper">
-      <section class="newsletter">
-        <span class="subtitle">SUBSCRIBE</span>
-        <h2>JOIN THE FUN<br />SUBSCRIBE NOW!</h2>
-        <p>
-          Subscribe to our newsletter for a weekly serving of recipes, cooking
-          tips, and exclusive insights straight to your inbox.
-        </p>
-
-        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
-          <input type="email" placeholder="Email Address" required />
-          <button type="submit">SUBSCRIBE</button>
-        </form>
-      </section>
-
-      <section class="footer-container">
-        <div class="top-footer">
-          <div class="footer-logo-wrap">
-            <img
-              src="./img/svgs/grey-logo.svg"
-              alt="Cooks Delight grey logo"
-            />
-            <span class="brand">Cooks<br />Delight</span>
-          </div>
-
-          <nav class="footer-nav">
-            <ul>
-              <li><a href="./index.html">HOME</a></li>
-              <li><a href="./index.html#tabs">RECIPES</a></li>
-         
-              <li><a href="./index.html#about-us-card">ABOUT US</a></li>
-            </ul>
-          </nav>
-
-          <div class="footer-socials">
-            <a href="#" aria-label="tiktok">
-              <img src="./img/svgs/socials/tiktok.svg" alt="tiktok icon" />
-            </a>
-            <a href="#" aria-label="fb">
-              <img src="./img/svgs/socials/fb.svg" alt="facebook icon" />
-            </a>
-            <a href="#" aria-label="insta">
-              <img src="./img/svgs/socials/instagram.svg" alt="instagram icon" />
-            </a>
-            <a href="#" aria-label="yt">
-              <img src="./img/svgs/socials/youtube.svg" alt="youtube icon" />
-            </a>
-          </div>
-        </div>
-
-        <hr class="footer-divider" />
-
-        <div class="footer-bottom">
-          <p>COPYRIGHT: &copy; 2026 COOKS DELIGHT. fan site</p>
-        </div>
-      </section>
-    </div>
-  </footer>
-
-</body>
+    </footer>
+  </body>
 </html>

@@ -1,0 +1,214 @@
+@use "../../partials/variables" as v;
+
+$gold: #f29c33;
+$gold-hover: #e8891c;
+$font-signature: "Brush Script MT", "Segoe Script", cursive;
+
+body {
+  background-color: v.$bg-color;
+  color: v.$text-dark;
+  font-family: v.$fInter;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero-section {
+  margin: 48px 0 38px;
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 50px;
+
+    @include v.view(md) {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+  }
+
+  .hero-left {
+    .hero-title {
+      color: v.$text-dark;
+      font-size: clamp(38px, 9vw, 80px);
+      font-weight: 900;
+      line-height: 1.05;
+      letter-spacing: -1.2px;
+      text-transform: uppercase;
+      padding-left: 20px;
+
+      @include v.view(sm) {
+        font-size: 36px;
+        padding-left: 0;
+      }
+    }
+  }
+
+  .hero-right {
+    padding-top: 6px;
+
+    .hero-desc {
+      margin-bottom: 22px;
+      color: #635f58;
+      font-size: 14.5px;
+      font-weight: 400;
+      line-height: 1.55;
+    }
+
+    .btn-explore {
+      display: inline-block;
+      padding: 10px 24px;
+      border-radius: 9999px;
+      background-color: $gold;
+      color: v.$text-dark;
+      font-size: 11.5px;
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition:
+        background-color 0.2s ease,
+        transform 0.15s ease;
+
+      &:hover {
+        background-color: $gold-hover;
+        transform: translateY(-1px);
+      }
+    }
+  }
+}
+
+.story-card {
+  .story-card-inner {
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    align-items: start;
+    gap: 46px;
+    max-width: 100%;
+    margin-inline: auto;
+    padding: 16px;
+    border: 2px solid v.$border-color;
+    border-radius: 32px;
+
+    @include v.view(md) {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+  }
+
+  .story-media {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .photo-wrapper {
+      width: 100%;
+      height: 500px;
+      overflow: hidden;
+      border-radius: 20px;
+
+      @include v.view(sm) {
+        height: 300px;
+      }
+
+      .portrait-img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .follow-pill {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 9px 20px;
+      border: 1.5px solid #2a2825;
+      border-radius: 9999px;
+      background-color: #eae6de;
+
+      .follow-text {
+        color: v.$text-dark;
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+
+      .social-icons {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: v.$text-dark;
+          font-size: 14px;
+          text-decoration: none;
+          transition: opacity 0.2s ease;
+
+          i {
+            @include v.fab;
+          }
+
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+  }
+
+  .story-content {
+    padding-top: 4px;
+
+    .story-title {
+      margin-bottom: 22px;
+      color: v.$text-dark;
+      font-size: clamp(22px, 2.2vw, 40px);
+      font-weight: 900;
+      line-height: 1.15;
+      letter-spacing: -0.4px;
+      text-transform: uppercase;
+    }
+
+    .story-paragraph {
+      font-family: v.$fInter;
+      margin-bottom: 16px;
+      color: #635f58;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.58;
+      width: 85%;
+    }
+
+    .signoff-group {
+      margin-top: 22px;
+
+      .signoff-text {
+        margin-bottom: 2px;
+        color: #9f998e;
+        font-size: 13px;
+      }
+
+      .signature {
+        display: inline-block;
+        color: v.$text-dark;
+        font-family: $font-signature;
+        font-size: 21px;
+        font-weight: 600;
+        line-height: 1.2;
+        letter-spacing: 0.5px;
+        padding-top: 5px;
+      }
+    }
+  }
+}
