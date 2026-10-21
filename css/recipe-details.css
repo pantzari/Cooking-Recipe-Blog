@@ -237,6 +237,7 @@ header .nav a {
   letter-spacing: 0.05em;
   padding-bottom: 0.35rem;
   -webkit-transition: color 0.2s ease;
+  -o-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
 header .nav a:hover {
@@ -289,6 +290,7 @@ header .actions .subscribe-btn {
   text-decoration: none;
   border-radius: 9999px;
   -webkit-transition: opacity 0.2s ease;
+  -o-transition: opacity 0.2s ease;
   transition: opacity 0.2s ease;
 }
 header .actions .subscribe-btn:hover {
@@ -321,6 +323,7 @@ header .actions .subscribe-btn:hover {
     visibility: hidden;
     -webkit-transition: opacity 0.3s ease, visibility 0.4s, -webkit-transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     transition: opacity 0.3s ease, visibility 0.4s, -webkit-transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    -o-transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease, visibility 0.4s;
     transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease, visibility 0.4s;
     transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease, visibility 0.4s, -webkit-transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   }
@@ -386,6 +389,7 @@ header .actions .subscribe-btn:hover {
             justify-content: center;
     -webkit-transition: -webkit-transform 0.2s ease;
     transition: -webkit-transform 0.2s ease;
+    -o-transition: transform 0.2s ease;
     transition: transform 0.2s ease;
     transition: transform 0.2s ease, -webkit-transform 0.2s ease;
   }
@@ -418,6 +422,7 @@ header .actions .subscribe-btn:hover {
     letter-spacing: 0.05em;
     text-decoration: none;
     -webkit-transition: color 0.2s ease;
+    -o-transition: color 0.2s ease;
     transition: color 0.2s ease;
   }
   .mobile-menu-overlay .mobile-nav a:hover {
@@ -609,6 +614,7 @@ footer .footer-nav a {
   font-weight: 600;
   letter-spacing: 0.05em;
   -webkit-transition: opacity 0.2s ease;
+  -o-transition: opacity 0.2s ease;
   transition: opacity 0.2s ease;
 }
 footer .footer-nav a:hover {
@@ -656,6 +662,7 @@ footer .footer-socials a {
   cursor: pointer;
   -webkit-transition: opacity 0.2s ease, -webkit-transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), -webkit-filter 0.2s ease;
   transition: opacity 0.2s ease, -webkit-transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), -webkit-filter 0.2s ease;
+  -o-transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.2s ease, filter 0.2s ease;
   transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.2s ease, filter 0.2s ease;
   transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.2s ease, filter 0.2s ease, -webkit-transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), -webkit-filter 0.2s ease;
 }
@@ -790,10 +797,6 @@ footer .footer-bottom p {
   }
 }
 
-/* =========================================================
-   COOKS DELIGHT - RECIPE DETAILS SCSS
-   ========================================================= */
-/* Base / Reset for Recipe Page */
 body {
   background-color: #fbf8f3;
   color: #1b1b1b;
@@ -815,6 +818,8 @@ body {
 .recipe-hero {
   padding: 40px 0 28px;
   text-align: center;
+  /* Meta Info Bar (Prep time, Difficulty, Servings) */
+  /* Main Hero Image */
 }
 .recipe-hero .category-badge-list {
   display: -webkit-box;
@@ -857,9 +862,6 @@ body {
   margin: 0 auto 24px;
   line-height: 1.5;
 }
-.recipe-hero {
-  /* Meta Info Bar (Prep time, Difficulty, Servings) */
-}
 .recipe-hero .recipe-meta-bar {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -893,9 +895,6 @@ body {
   stroke: #1b1b1b;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-}
-.recipe-hero {
-  /* Main Hero Image */
 }
 .recipe-hero .hero-image-wrapper {
   width: 100%;
@@ -935,6 +934,12 @@ body {
 /* ================= LEFT COLUMN: MAIN RECIPE CONTENT ================= */
 .recipe-content-main {
   /* Story / Intro */
+  /* Cooking Guide: Dos & Don'ts */
+  /* Instructions Section */
+  /* Dynamic Step Cards */
+  /* Pairing Suggestions */
+  /* Tags & Social Share Bar */
+  /* Author Card */
 }
 .recipe-content-main .section-intro {
   font-size: 0.95rem;
@@ -947,9 +952,6 @@ body {
 }
 .recipe-content-main .section-intro p:last-child {
   margin-bottom: 0;
-}
-.recipe-content-main {
-  /* Cooking Guide: Dos & Don'ts */
 }
 .recipe-content-main .section-guide {
   background-color: #f7f3ec;
@@ -985,9 +987,6 @@ body {
   line-height: 1.5;
   margin: 0;
 }
-.recipe-content-main {
-  /* Instructions Section */
-}
 .recipe-content-main .section-instructions {
   border-top: 1px solid #ede7dc;
   padding-top: 32px;
@@ -1005,9 +1004,6 @@ body {
   color: #5e5e5e;
   margin-bottom: 28px;
   line-height: 1.55;
-}
-.recipe-content-main {
-  /* Dynamic Step Cards */
 }
 .recipe-content-main .steps-container {
   display: -webkit-box;
@@ -1064,6 +1060,7 @@ body {
      object-fit: cover;
   -webkit-transition: -webkit-transform 0.4s ease;
   transition: -webkit-transform 0.4s ease;
+  -o-transition: transform 0.4s ease;
   transition: transform 0.4s ease;
   transition: transform 0.4s ease, -webkit-transform 0.4s ease;
 }
@@ -1071,9 +1068,6 @@ body {
   -webkit-transform: scale(1.02);
       -ms-transform: scale(1.02);
           transform: scale(1.02);
-}
-.recipe-content-main {
-  /* Pairing Suggestions */
 }
 .recipe-content-main .pairing-container {
   background: rgba(255, 255, 255, 0.8);
@@ -1096,9 +1090,6 @@ body {
 }
 .recipe-content-main .pairing-container p:last-child {
   margin-bottom: 0;
-}
-.recipe-content-main {
-  /* Tags & Social Share Bar */
 }
 .recipe-content-main .recipe-tags-share {
   display: -webkit-box;
@@ -1161,15 +1152,13 @@ body {
           justify-content: center;
   cursor: pointer;
   -webkit-transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .recipe-content-main .recipe-tags-share .share-buttons .share-btn:hover {
   background-color: #1b1b1b;
   color: #ffffff;
   border-color: #1b1b1b;
-}
-.recipe-content-main {
-  /* Author Card */
 }
 .recipe-content-main .author-card {
   background-color: #ffffff;
@@ -1220,6 +1209,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   -webkit-transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .recipe-content-main .author-card .author-details .btn-outline:hover {
@@ -1245,6 +1235,7 @@ body {
   padding: 26px 24px;
   -webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
           box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  /* Nutritional Value Card */
 }
 .recipe-sidebar .sidebar-card .sidebar-card-title {
   font-size: 0.8rem;
@@ -1281,9 +1272,6 @@ body {
   top: -1px;
   color: #e6392f;
   font-size: 1.2rem;
-}
-.recipe-sidebar .sidebar-card {
-  /* Nutritional Value Card */
 }
 .recipe-sidebar .sidebar-card.nutrition-card .nutrition-serving {
   font-size: 0.78rem;
@@ -1416,6 +1404,7 @@ body {
           justify-content: center;
   cursor: pointer;
   -webkit-transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .featured-recipes-section .wrapper .featured-card .featured-header .swiper-navigation .swiper-button-prev::after,
@@ -1584,6 +1573,7 @@ body {
   text-decoration: none;
   white-space: nowrap;
   -webkit-transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .recipe-card .card-body .card-footer .view-btn:hover {
