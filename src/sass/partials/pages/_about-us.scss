@@ -41,6 +41,7 @@ main {
       letter-spacing: -1.2px;
       text-transform: uppercase;
       padding-left: 20px;
+      font-family: "Montserrat", "Segoe UI", sans-serif;
 
       @include v.view(sm) {
         font-size: 36px;
@@ -51,11 +52,13 @@ main {
 
   .hero-right {
     padding-top: 6px;
+    margin: auto 0;
 
     .hero-desc {
-      margin-bottom: 22px;
+      margin-bottom: 40px;
+      width: 95%;
       color: #635f58;
-      font-size: 14.5px;
+      font-size: 21px;
       font-weight: 400;
       line-height: 1.55;
     }
@@ -98,6 +101,27 @@ main {
     @include v.view(md) {
       grid-template-columns: 1fr;
       gap: 32px;
+    }
+    .display-pics {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 8px;
+      padding: 8px;
+      background-color: #f2efe9;
+      border-radius: 20px;
+
+      @include v.view(md) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        border-radius: 12px;
+      }
     }
   }
 
@@ -195,7 +219,7 @@ main {
 
       .signoff-text {
         margin-bottom: 2px;
-        color: #9f998e;
+        color: #766d5d;
         font-size: 13px;
       }
 

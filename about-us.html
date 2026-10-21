@@ -39,28 +39,13 @@
 
       <nav class="nav">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#tabs">Recipes</a></li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./index.html#tabs">Recipes</a></li>
           <li><a href="./about-us.html" class="active">About Us</a></li>
         </ul>
       </nav>
 
       <div class="actions">
-        <button class="search-btn" aria-label="Search">
-          <svg
-            width="18"
-            height="18"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <circle cx="11" cy="11" r="8"></circle>
-            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-          </svg>
-        </button>
         <a href="#subscribe" class="subscribe-btn">Subscribe</a>
       </div>
 
@@ -114,23 +99,8 @@
           </ul>
         </nav>
 
-        <!-- Search & Subscribe -->
+        <!-- Subscribe -->
         <div class="mobile-actions">
-          <button class="search-btn" aria-label="Search">
-            <svg
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <circle cx="11" cy="11" r="8"></circle>
-              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-            </svg>
-          </button>
           <a href="#subscribe" class="subscribe-btn">SUBSCRIBE</a>
         </div>
 
@@ -179,7 +149,7 @@
               Delight. Join me on a gastronomic journey where each dish carries
               a story, and every recipe is a crafted symphony of taste.
             </p>
-            <a href="#recipes" class="btn-explore">EXPLORE RECIPES</a>
+            <a href="#featured-card" class="btn-explore">EXPLORE RECIPES</a>
           </div>
         </div>
       </section>
@@ -251,6 +221,7 @@
                 </div>
               </div>
             </div>
+
             <!-- Right Bio Column -->
             <div class="story-content">
               <h2 class="story-title">
@@ -259,13 +230,13 @@
               </h2>
               <p class="story-paragraph">
                 Born and raised in the vibrant culinary landscape of Italy, my
-                journey with food<br />began in the heart of my family's
-                kitchen. Surrounded by the aroma of fresh herbs, the sizzle of
-                pans, and the laughter of loved ones, I developed a deep
-                appreciation for the art of cooking. My culinary education took
-                me from the historic streets of Rome to the bustling markets of
-                Florence, where I honed my skills and cultivated a love for the
-                simplicity and authenticity of Italian cuisine.
+                journey with food began in the heart of my family's kitchen.
+                Surrounded by the aroma of fresh herbs, the sizzle of pans, and
+                the laughter of loved ones, I developed a deep appreciation for
+                the art of cooking. My culinary education took me from the
+                historic streets of Rome to the bustling markets of Florence,
+                where I honed my skills and cultivated a love for the simplicity
+                and authenticity of Italian cuisine.
               </p>
               <p class="story-paragraph">
                 Driven by a relentless curiosity, I embarked on a global
@@ -285,6 +256,18 @@
                 <span class="signature">Isabella Russo</span>
               </div>
             </div>
+            <div class="display-pics">
+              <img
+                src="./img/abt-right-img.png"
+                alt="Chefs preparing food in a kitchen"
+              />
+              <img src="./img/d-1.png" alt="A chef preparing a plated meal" />
+              <img src="./img/d-2.png" alt="Salmon cooking in a pan" />
+              <img
+                src="./img/d-3.png"
+                alt="A pan of vegetables cooking on the stove"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -292,7 +275,7 @@
       <section class="featured-recipes-section">
         <div class="wrapper">
           <!-- Inner container to hold the border and constrain width -->
-          <div class="featured-card">
+          <div class="featured-card" id="featured-card">
             <div class="featured-header">
               <h2>FEATURED RECIPES</h2>
 

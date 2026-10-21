@@ -236,7 +236,6 @@ header .nav a {
   letter-spacing: 0.05em;
   padding-bottom: 0.35rem;
   -webkit-transition: color 0.2s ease;
-  -o-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
 header .nav a:hover {
@@ -269,30 +268,6 @@ header .actions {
     display: none;
   }
 }
-header .actions .search-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.05);
-  border: none;
-  color: #232321;
-  cursor: pointer;
-  -webkit-transition: background-color 0.2s ease;
-  -o-transition: background-color 0.2s ease;
-  transition: background-color 0.2s ease;
-}
-header .actions .search-btn:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-}
 header .actions .subscribe-btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -313,7 +288,6 @@ header .actions .subscribe-btn {
   text-decoration: none;
   border-radius: 9999px;
   -webkit-transition: opacity 0.2s ease;
-  -o-transition: opacity 0.2s ease;
   transition: opacity 0.2s ease;
 }
 header .actions .subscribe-btn:hover {
@@ -346,7 +320,6 @@ header .actions .subscribe-btn:hover {
     visibility: hidden;
     -webkit-transition: opacity 0.3s ease, visibility 0.4s, -webkit-transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     transition: opacity 0.3s ease, visibility 0.4s, -webkit-transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    -o-transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease, visibility 0.4s;
     transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease, visibility 0.4s;
     transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease, visibility 0.4s, -webkit-transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   }
@@ -412,7 +385,6 @@ header .actions .subscribe-btn:hover {
             justify-content: center;
     -webkit-transition: -webkit-transform 0.2s ease;
     transition: -webkit-transform 0.2s ease;
-    -o-transition: transform 0.2s ease;
     transition: transform 0.2s ease;
     transition: transform 0.2s ease, -webkit-transform 0.2s ease;
   }
@@ -445,7 +417,6 @@ header .actions .subscribe-btn:hover {
     letter-spacing: 0.05em;
     text-decoration: none;
     -webkit-transition: color 0.2s ease;
-    -o-transition: color 0.2s ease;
     transition: color 0.2s ease;
   }
   .mobile-menu-overlay .mobile-nav a:hover {
@@ -460,24 +431,6 @@ header .actions .subscribe-btn:hover {
             align-items: center;
     gap: 12px;
     margin-bottom: 24px;
-  }
-  .mobile-menu-overlay .mobile-actions .search-btn {
-    all: unset;
-    cursor: pointer;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    color: #ffffff;
   }
   .mobile-menu-overlay .mobile-actions .subscribe-btn {
     -webkit-box-flex: 1;
@@ -655,7 +608,6 @@ footer .footer-nav a {
   font-weight: 600;
   letter-spacing: 0.05em;
   -webkit-transition: opacity 0.2s ease;
-  -o-transition: opacity 0.2s ease;
   transition: opacity 0.2s ease;
 }
 footer .footer-nav a:hover {
@@ -703,7 +655,6 @@ footer .footer-socials a {
   cursor: pointer;
   -webkit-transition: opacity 0.2s ease, -webkit-transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), -webkit-filter 0.2s ease;
   transition: opacity 0.2s ease, -webkit-transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), -webkit-filter 0.2s ease;
-  -o-transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.2s ease, filter 0.2s ease;
   transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.2s ease, filter 0.2s ease;
   transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.2s ease, filter 0.2s ease, -webkit-transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), -webkit-filter 0.2s ease;
 }
@@ -916,7 +867,6 @@ footer .footer-bottom p {
   font-size: 14px;
   -webkit-transition: background-color 0.2s ease, -webkit-transform 0.2s ease;
   transition: background-color 0.2s ease, -webkit-transform 0.2s ease;
-  -o-transition: background-color 0.2s ease, transform 0.2s ease;
   transition: background-color 0.2s ease, transform 0.2s ease;
   transition: background-color 0.2s ease, transform 0.2s ease, -webkit-transform 0.2s ease;
 }
@@ -925,7 +875,6 @@ footer .footer-bottom p {
   position: absolute;
   inset: -4px;
   z-index: -1;
-  background: -o-linear-gradient(45deg, #f29c33, #ff6b00, #f29c33);
   background: linear-gradient(45deg, #f29c33, #ff6b00, #f29c33);
   border-radius: inherit;
   -webkit-filter: blur(12px);
@@ -1059,7 +1008,7 @@ footer .footer-bottom p {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 16px;
-  border-bottom: 2px solid #1e1e234b;
+  border-bottom: 2px solid rgba(30, 30, 35, 0.2941176471);
   padding-bottom: 14px;
 }
 @media only screen and (max-width: 1024px) {
@@ -1119,8 +1068,8 @@ footer .footer-bottom p {
     padding-right: 0;
   }
   #about-us-card .about-us-grid .abt-top-img,
-#about-us-card .about-us-grid .abt-bottom-img,
-#about-us-card .about-us-grid .abt-right-img {
+  #about-us-card .about-us-grid .abt-bottom-img,
+  #about-us-card .about-us-grid .abt-right-img {
     width: 100%;
     min-height: 324px;
     height: 100%;
@@ -1365,7 +1314,6 @@ footer .footer-bottom p {
   text-decoration: none;
   white-space: nowrap;
   -webkit-transition: background-color 0.2s ease, color 0.2s ease;
-  -o-transition: background-color 0.2s ease, color 0.2s ease;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 .recipe-card .card-body .card-footer .view-btn:hover {
@@ -1470,7 +1418,6 @@ footer .footer-bottom p {
   letter-spacing: 0.5px;
   cursor: pointer;
   -webkit-transition: border-color 0.2s ease, background-color 0.2s ease;
-  -o-transition: border-color 0.2s ease, background-color 0.2s ease;
   transition: border-color 0.2s ease, background-color 0.2s ease;
 }
 #tabs .tabs-container .tab-btn:hover {
@@ -1490,10 +1437,12 @@ footer .footer-bottom p {
 @media only screen and (max-width: 1024px) {
   #tabs .recipes-grid {
     /* Hide every recipe card after the 4th item unless grid is expanded */
-    /* Show button container only when grid has more than 4 items */
   }
   #tabs .recipes-grid:not(.expanded) .recipe-card:nth-child(n+5) {
     display: none;
+  }
+  #tabs .recipes-grid {
+    /* Show button container only when grid has more than 4 items */
   }
   #tabs .recipes-grid.has-more + .see-more-container {
     display: -webkit-box;
@@ -1522,7 +1471,6 @@ footer .footer-bottom p {
   cursor: pointer;
   -webkit-transition: background-color 0.2s ease, -webkit-transform 0.1s ease;
   transition: background-color 0.2s ease, -webkit-transform 0.1s ease;
-  -o-transition: background-color 0.2s ease, transform 0.1s ease;
   transition: background-color 0.2s ease, transform 0.1s ease;
   transition: background-color 0.2s ease, transform 0.1s ease, -webkit-transform 0.1s ease;
 }
@@ -1648,7 +1596,6 @@ footer .footer-bottom p {
 }
 .featured-recipes-section .wrapper .featured-card .featured-header .swiper-navigation .swiper-button-prev::after,
 .featured-recipes-section .wrapper .featured-card .featured-header .swiper-navigation .swiper-button-next::after {
-  font-size: 10px !important;
-  /* Force small arrow size */
+  font-size: 10px !important; /* Force small arrow size */
   line-height: 1 !important;
 }

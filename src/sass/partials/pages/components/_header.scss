@@ -102,7 +102,7 @@ header {
     }
   }
 
-  // Right Side Buttons
+  // Right Side Button
   .actions {
     display: flex;
     align-items: center;
@@ -110,24 +110,6 @@ header {
     @include v.view(tablet) {
       display: none;
     }
-    .search-btn {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 42px;
-      height: 42px;
-      border-radius: 50%;
-      background-color: rgba(0, 0, 0, 0.05);
-      border: none;
-      color: v.$text-dark;
-      cursor: pointer;
-      transition: background-color 0.2s ease;
-
-      &:hover {
-        background-color: rgba(0, 0, 0, 0.1);
-      }
-    }
-
     .subscribe-btn {
       display: inline-flex;
       align-items: center;
@@ -259,19 +241,6 @@ header {
       align-items: center;
       gap: 12px;
       margin-bottom: 24px;
-
-      .search-btn {
-        all: unset;
-        cursor: pointer;
-        width: 48px;
-        height: 48px;
-        border-radius: 50%;
-        background-color: rgba(255, 255, 255, 0.1);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #ffffff;
-      }
 
       .subscribe-btn {
         flex: 1;
