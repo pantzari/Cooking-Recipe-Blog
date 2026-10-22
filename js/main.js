@@ -12,13 +12,11 @@ closeBtn?.addEventListener("click", () => {
   document.body.style.overflow = "";
 });
 
-// close when clocking outside
 mobileMenu?.addEventListener("click", (e) => {
   if (e.target === mobileMenu) {
     mobileMenu.classList.remove("is-open");
     document.body.style.overflow = "";
   }
 });
-
 
 

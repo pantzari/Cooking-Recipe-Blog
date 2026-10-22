@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     swiperWrapper.innerHTML = "";
 
-    // Added index so every recipe has an ID fallback
     recipes.forEach((recipe, index) => {
       const isVegan = recipe.badges && recipe.badges.includes("VEGAN");
       const recipeId = recipe.id !== undefined ? recipe.id : (recipe._id !== undefined ? recipe._id : index + 1);
@@ -18,7 +17,6 @@ document.addEventListener("DOMContentLoaded", async () => {
       const slide = document.createElement("div");
       slide.classList.add("swiper-slide");
 
-      // Exact structure from your #tabs .recipes-grid SCSS
       slide.innerHTML = `
         <div class="recipe-card" data-is-vegan="${isVegan}">
           <div class="image-wrapper">
@@ -30,7 +28,6 @@ document.addEventListener("DOMContentLoaded", async () => {
             <p class="card-description">${recipe.description}</p>
             <div class="card-footer">
               <span class="meta-info">${recipe.meta.prep_time} - ${recipe.meta.difficulty} - ${recipe.meta.servings}</span>
-              <!-- NOW LEADS TO RECIPE-DETAILS WITH THE ID -->
               <a href="./recipe-details.html?id=${recipeId}" class="view-btn">VIEW RECIPE</a>
             </div>
           </div>
@@ -40,7 +37,6 @@ document.addEventListener("DOMContentLoaded", async () => {
       swiperWrapper.appendChild(slide);
     });
 
-    // Initialize Swiper
     new Swiper(".mySwiper", {
       observer: true,
       observeParents: true,

@@ -13,6 +13,15 @@ Cooks Delight is a responsive recipe website for discovering and exploring recip
 - Responsive layouts with a mobile navigation menu
 - Burger Menu
 
+## How the “View Recipe” experience works
+
+- Selecting View Recipe opens the recipe detail page with that recipe’s ID in the URL.
+- The detail-page JavaScript loads the recipe data from JSON, finds the matching recipe by ID, and fills the page with its content.
+- Cooking steps are generated dynamically, including instruction lists and optional images.
+- A recipe selector and similar-recipe cards let users switch to another recipe without reloading the page.
+- The selected recipe ID is kept in the URL, and browser Back/Forward navigation restores the corresponding recipe.
+  If the URL does not contain a valid recipe ID, the page displays the first recipe in the data.
+
 ## Built with
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
